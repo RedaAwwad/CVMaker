@@ -2,7 +2,7 @@
   "name": "hwdaj",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build"
@@ -47,5 +47,8 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "slick-carousel": "^1.8.1"
+  },
+  "config": {
+    "host": "0.0.0.0"
   }
 }
