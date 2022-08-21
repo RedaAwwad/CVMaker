@@ -1,23 +1,14 @@
 {
-  "name": "hwdaj",
+  "name": "cvmaker",
   "version": "1.0.0",
   "description": "",
   "main": "dist/",
   "scripts": {
-    "start": "gulp serve",
-    "build": "gulp build",
-    "dev": "gulp"
+    "dev": "gulp",
+    "build": "gulp build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RedaAwwad/Hwdaj-v2.git"
-  },
-  "author": "Hwdaj",
+  "author": "cvmaker",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RedaAwwad/Hwdaj-v2/issues"
-  },
-  "homepage": "https://github.com/RedaAwwad/Hwdaj-v2#readme",
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
@@ -48,5 +39,8 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "slick-carousel": "^1.8.1"
+  },
+  "config": {
+    "host": "0.0.0.0"
   }
 }
