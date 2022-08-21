@@ -1,0 +1,17 @@
+.card {
+  &-zad {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 20px 40px 0px #A7B8CA;
+  }
+  
+  &-title {
+    font-family: 'Tajawal Bold', Arial, Helvetica, sans-serif;
+  }
+
+  &-body {
+    padding: 1rem 0.5rem 0.5rem;
+  }
+ 
+}

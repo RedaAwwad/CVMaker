@@ -1,0 +1,10 @@
+
+// normalize css
+@forward './normalize';
+
+// bootstrap
+@forward 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+// slick
+@forward 'node_modules/slick-carousel/slick/slick.css';
+@forward 'node_modules/slick-carousel/slick/slick-theme.css';

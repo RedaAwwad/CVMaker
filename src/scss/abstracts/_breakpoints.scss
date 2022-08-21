@@ -1,0 +1,8 @@
+$breakpoints: (
+  'xs': screen and ( min-width:  0px ) and ( and max-width: 575px ),
+  'sm':  screen and ( min-width:  576px ) and ( and max-width: 766px ),
+  'md':  screen and ( min-width:  767px ) and ( and max-width: 991px ),
+  'lg': screen and ( min-width:  992px ) and ( and max-width: 1199px ),
+  'xl':  screen and ( min-width: 1200px ) and ( and max-width: 1399px ),
+  '2xl':  screen and ( min-width: 1400px )
+);

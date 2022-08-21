@@ -1,0 +1,78 @@
+@use '../abstracts/variables' as *;
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.section {
+  &-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: 480px) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 1.75rem;
+    font-size: 2.5rem;
+    color: $dark;
+    
+    &--padding {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+
+      span {
+        display: inline-block;
+        height: 4px;
+        border-radius: 5px;
+        background-color: $blue;
+
+        &:first-child {
+          width: 60px;
+        }
+        &:nth-child(2) {
+          width: 20px;
+        }
+        &:last-child {
+          width: 8px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 2rem;
+      
+      &--padding {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.nice-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background-color: $text;
+  }
+}

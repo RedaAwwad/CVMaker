@@ -1,0 +1,707 @@
+// Home page styles
+@use '../abstracts' as *;
+
+/* ================
+our main services
+================= */
+.our-main-services {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  
+  @media screen and (max-width: 576px) {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  &>.container {
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
+  &__content {
+    padding-bottom: 4rem;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__slides {
+    position: relative;
+    min-height: 320px;
+
+    .services-slide {
+      position: absolute;
+      right: 0;
+      min-height: 320px;
+      width: 280px;
+      border-radius: 10px;
+      padding: 2rem;
+      background-color: $white;
+      box-shadow: $shadow;
+      transition: 300ms $bezier;
+      transform: translate(-100px, 40px);
+      z-index: 2;
+
+      .icon {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+      } 
+
+      h3 {
+        max-width: 200px;
+        margin-bottom: 1rem;
+        font-family: $sans-light;
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+      }
+
+      &.active {
+        transform: translate(0, 0);
+        background-color: $dark;
+        color: $white;
+        z-index: 3;
+
+        p {
+          color: $text;
+        }
+      }
+
+      &.last {
+        transform: translate(-200px, 80px);
+        opacity: 0.5;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+/* ================
+steps
+================= */
+.steps {
+
+  .section__text {
+    font-size: 1.3rem;
+  }
+
+  &__features {
+
+    .feature-card {
+      gap: 1.5rem;
+
+      .title {
+        color: $primary;
+        font-size: 1.3rem;
+      }
+
+      .text {
+        font-size: 0.9rem;
+      }
+    }
+
+    .icon {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: rgb(52,72,127);
+      background: linear-gradient(41deg, rgba(52,72,127,1) 0%, rgba(47,114,169,1) 100%);
+      color: $white;
+      font-size: 2rem;
+      font-family: $sans-bold;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgb(52,72,127);
+        background: linear-gradient(41deg, rgba(52,72,127,1) 0%, rgba(47,114,169,1) 100%);
+      }
+    }
+  }
+}
+
+/* ================
+memberships
+================= */
+.memberships {
+
+  &__card {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    &-cards__container {
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        height: 10px;
+      }
+       
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+       
+      &::-webkit-scrollbar-thumb {
+        background-color: $text;
+      }
+      // width: calc(( 3 * 500px));
+
+      &>.row {
+        width: calc(( 3 * 350px) + 20px);
+      }
+    }
+    
+    &__card {
+      width: 350px;
+      padding: 3rem 2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &-cards__container>.row {
+      width: calc(( 3 * 300px) + 20px);
+    }
+
+    &__card {
+      width: 300px;
+      padding: 2rem 1rem;
+    }
+  }
+
+  &__card {
+    padding: 3rem 2rem;
+    border: 1px solid $border;
+    border-radius: 5px;
+    background-color: $white;
+
+    &--title {
+      margin-bottom: 0;
+      font-size: 3rem;
+      text-align: center;
+      font-family: $sans-light;
+      color: $secondary;
+
+      span {
+        font-size: 3.5rem;
+        font-family: $sans-bold;
+      }
+    }
+
+    &--sub-title {
+      margin-bottom: 3rem;
+      text-align: center;
+      color: $secondary;
+    }
+
+    .btn-start {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      background-color: $secondary;
+      color: $white;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      transition: transform 300ms $bezier;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &.best-seller {
+      box-shadow: $shadow;
+      border: none;
+      transform: scale(1.5);
+
+
+      .btn-start {
+        background-color: $red;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 15px;
+      margin-bottom: 3rem;
+    }
+
+    li {
+      position: relative;
+      font-size: 0.9rem;
+
+      &::after {
+        content: url(../assets/imgs/check.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+    }
+  }
+}
+
+@keyframes an-blink-lamp {
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__body--text .slide-up,
+.header__slider .slide-up {
+  &:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  &:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  &:nth-child(4) {
+    animation-delay: 600ms;
+  }
+}
+
+.invite__links,
+.our-main-services__stats,
+.what-we-do__features,
+.ezba,
+.zad__grid,
+.carafan__types,
+.mazadat__options {
+  .reveal {
+    &:nth-child(2) {
+      animation-delay: 200ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 400ms;
+    }
+    &:nth-child(4) {
+      animation-delay: 600ms;
+    }
+    &:nth-child(5) {
+      animation-delay: 800ms;
+    }
+  }
+}
+
+.slide-up {
+  animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ================
+ezba
+================= */
+.ezba {
+  .carousel-item {
+    height: 300px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 4px;
+    }
+  }
+
+  &-slider-nav {
+    .slick-list {
+      margin: 0 -10px;
+    }
+    
+    .slick-slide>div {
+      padding: 0 10px;
+    }
+
+    .slick-current .slide-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-slide {
+      height: 110px;
+      position: relative;
+
+      &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+
+
+    .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      background: rgba(44, 8, 93, 0.75);
+      border-radius: 4px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 300ms $bezier;
+
+      img {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        z-index: 4;
+        left: 50%;
+        transform: translateX(-30%);
+      }
+    }
+  }
+
+  &__card {
+    gap: 15px;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h3 {
+      color: $primary;
+      font-family: 'Tajawal Bold', sans-serif;
+    }
+
+    .icon {
+      width: 5.625rem;
+      height: 5.625rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(132, 130, 255, 0.31), rgba(120, 36, 255, 0.1) 100%);
+      // opacity: 0.08;
+    }
+  }
+
+}
+
+/* ================
+carafan
+================= */
+.carafan {
+  &__booking-link {
+    font-family: 'Tajawal Bold', sans-serif;
+    font-size: 1.2rem;
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__types {
+    padding-bottom: 3rem;
+    gap: 15px;
+
+    &-card {
+      column-gap: 15px;
+      width: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+
+      @media screen and (max-width: 1080px) {
+        width: 450px;
+      }
+
+      @media screen and (max-width: 991px) {
+        width: calc(50% - 15px);
+      }
+
+      @media screen and (max-width: 700px) {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+
+      &:first-child,
+      &:last-child {
+        position: relative;
+        background: url(../assets/imgs/carafan-type-1.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 1rem;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(270deg, #2C085D 0%, #7D1FFC 100%);
+          opacity: 0.9;
+
+          z-index: 1;
+        }
+
+        &>div {
+          z-index: 2;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        position: relative;
+        background: url(../assets/imgs/carafan-type-2.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 1rem;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $dark;
+          opacity: 0.95;
+
+          z-index: 1;
+        }
+
+        &>div {
+          z-index: 2;
+        }
+      }
+
+      &:nth-child(3),
+      &:last-child {
+        transform: translateX(-100px);
+
+        @media screen and (max-width: 1200px) {
+          transform: translateX(-50px);
+        }
+
+        @media screen and (max-width: 767px) {
+          transform: translateX(0);
+        }
+      }
+
+      h3 {
+        color: $primary;
+        font-family: 'Tajawal Bold', sans-serif;
+        font-size: 1.2rem;
+        color: $white;
+      }
+
+      p {
+        max-width: 300px;
+        margin-bottom: 0;
+        color: #F4F4F4;
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, rgba(132, 130, 255, 0.31), rgba(120, 36, 255, 0.1) 100%);
+        // opacity: 0.08;
+      }
+    }
+  }
+}
+
+/* ================
+swalif
+================= */
+.swalif {
+  position: relative;
+  background: url(../assets/imgs/swalif.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  &>div {
+    position: relative;
+    z-index: 2;
+  }
+
+  .slick-list {margin: 0 -10px;}
+  .slick-slide {
+    &>div {padding: 0 10px;}
+
+    .swalif-slider-card {
+      position: relative;
+      display: inline-block;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+      text-decoration: none;
+
+      &:hover {
+        .swalif-slider-card-icon {
+          transform: translateX(-20px);
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+      }
+
+      &-icon {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s $bezier;
+      }
+
+      &-content {
+        padding-right: 15px;
+      }
+      
+      img {
+        width: 220px;
+        height: 180px;
+        border-radius: 15px;
+
+        @media screen and (max-width: 991px) {
+          width: 125px;
+        }
+
+        @media screen and (max-width: 767px) {
+          width: 180px;
+        }
+
+        @media screen and (max-width: 500px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* ================
+mazadat
+================= */
+.mazadat {
+  .start-now-box {
+    max-width: 450px;
+    height: 60px;
+    padding: 15px;
+    border: 2px solid #D9E1E7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+
+    .btn {
+      padding: 0.5rem 2rem!important;
+      border-radius: 33px;
+    }
+  }
+
+  &__options {
+    gap: 10px;
+
+    a {
+      white-space: nowrap;
+    }
+  }
+}
+
+/* ================
+tourist facilities
+================= */
+.tourist-facilities {
+
+  &__img {
+    background: url(../assets/imgs/sun.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  &__form {
+    padding: 4rem 3rem;
+    background-color: #F5F5F5;
+
+    @media screen and (max-width: 576px) {
+      padding: 3rem 1rem;
+    }
+
+    &>div {
+      max-width: 600px;
+    }
+  }
+}
