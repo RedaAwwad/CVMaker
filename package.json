@@ -2,8 +2,10 @@
   "name": "hwdaj",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
+  "main": "dist/",
   "scripts": {
+    "start": "node app",
+    "postinstall": "gulp default",
     "dev": "gulp",
     "build": "gulp build"
   },
@@ -47,8 +49,5 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "slick-carousel": "^1.8.1"
-  },
-  "config": {
-    "host": "0.0.0.0"
   }
 }
