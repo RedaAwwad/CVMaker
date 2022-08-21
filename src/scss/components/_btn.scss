@@ -23,6 +23,45 @@
     }
   }
 
+  &-primary-outline {
+    padding: 0.9rem 1rem !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-color: $primary !important;
+    background-color: transparent;
+    color: $primary !important;
+    // border: none !important;
+    transition: transform .3s $bezier;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background-color: $primary;
+      z-index: -1;
+      transition: width 300ms $bezier;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+    }
+
+    &:hover {
+      box-shadow: 0px 8px 20px rgba(14, 49, 81, 0.08);
+      transform: scale(1.02);
+      color: $white !important;
+
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
   &-more {
     display: inline-flex;
     column-gap: 10px;
@@ -66,55 +105,4 @@
     }
   }
 
-  &-discover {
-    display: inline-flex;
-    column-gap: 10px;
-    padding: 0.8rem 2.5rem;
-    border: 1px solid $white;
-    color: $white;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      z-index: -1;
-      background-color: $white;
-      transition: 0.3s $bezier;
-    }
-
-    .fill {
-      transition: 0.3s $bezier;
-    }
-
-    &:hover {
-      border-color: $white !important;
-      color: $primary !important;
-
-      &::before {
-        width: 100%;
-        left: auto;
-        right: 0;
-      }
-
-      .fill {
-        fill: $primary;
-      }
-    }
-  }
-
-  &-option {
-    padding: 0.5rem 2rem !important;
-    background-color: rgba(44, 8, 93, 0.27) !important;
-    color: $white !important;
-    transition: 0.3s $bezier;
-
-    &:hover {
-      background-color: $primary !important;
-      color: $white !important;
-    }
-  }
-  
 }
