@@ -1,4 +1,4 @@
- # Hwdaj 
+ # CV Maker 
  
  ### Build Setup  
  ```bash
@@ -9,4 +9,5 @@
  $ npm run dev  
 
  # build for production and launch server 
- $ npm run build  ```
+ $ npm run build 
+ ```
