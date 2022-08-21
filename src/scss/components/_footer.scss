@@ -38,6 +38,23 @@
     gap: 20px;
   }
 
+  &__form {
+    .form-control {
+      width: 300px;
+      max-width: 100%;
+      border-radius: 0;
+      border: 0;
+      background-color: #46475a;
+      color: $white;
+    }
+
+    .btn {
+      border-radius: 0;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
   &__content {
     padding-top: 2rem;
     padding-bottom: 2rem;

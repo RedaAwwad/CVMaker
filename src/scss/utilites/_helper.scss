@@ -51,7 +51,7 @@
     @media screen and (max-width: 480px) {
       font-size: 2rem;
       
-      &--padding {
+      &--padding.center {
         left: 50%;
         transform: translateX(-50%);
       }
