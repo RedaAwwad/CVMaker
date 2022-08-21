@@ -4,10 +4,9 @@
   "description": "",
   "main": "dist/",
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp default",
-    "dev": "gulp",
-    "build": "gulp build"
+    "start": "gulp serve",
+    "build": "gulp build",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",

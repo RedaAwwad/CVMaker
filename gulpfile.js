@@ -139,7 +139,8 @@ const watchTasks = () => {
   browserSync.init({
     server: {
       baseDir: "./dist/"
-    }
+    },
+    port: process.env.PORT || 5000
   });
 
   watch(PATHS['fonts'], moveFonts);
