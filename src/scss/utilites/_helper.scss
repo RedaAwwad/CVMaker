@@ -76,3 +76,25 @@
     background-color: $text;
   }
 }
+
+.shape>div {
+  // position: absolute;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #0b2f52;
+
+  &:first-child {
+    height: 5px;
+    width: 250px;
+  }
+
+  &:last-child {
+    height: 20px;
+    width: 260px;
+  }
+
+  &:nth-child(2) {
+    height: 10px;
+    width: 350px;
+  }
+}

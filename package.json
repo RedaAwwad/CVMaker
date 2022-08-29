@@ -38,7 +38,8 @@
     "bootstrap": "^4.6.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.3.2"
   },
   "config": {
     "host": "0.0.0.0"

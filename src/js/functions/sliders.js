@@ -31,36 +31,6 @@ export const initServicesSlider = (element, interval = 3000) => {
   }, interval);
 }
 
-
-// init header slider
-export const initHeaderSlider = (element) => {
-  $(element).slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    rtl: true,
-    dots: false,
-    arrows: false,
-    infinite: true,
-    focusOnSelect: true,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-        }
-      },
-    ]
-  });
-}
-
 // navigate to next slide
 export const navigateToNextSlide = (sliderElement) => {
   $(sliderElement).slick('slickNext');
@@ -71,102 +41,42 @@ export const navigateToPrevSlide = (sliderElement) => {
   $(sliderElement).slick('slickPrev');
 }
 
-// update side number
-export const updateHeaderSlideNumber = (event, slick, currSlide) => {
-  let count = ( currSlide + 1 ) < 9 ? `0${currSlide + 1}` : ( currSlide + 1 );
-
-  $('#headerSliderCount').text(count);
-}
-
-// init ezba slider navigator
-export const initEzbaSliderNavigator = (element) => {
+// init Templates Slider
+export const initTemplatesSlider = (element) => {
   $(element).slick({
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    rtl: true,
     dots: false,
     arrows: false,
     infinite: true,
     focusOnSelect: true,
     autoplay: true,
+    // fade: true,
+    cssEase: 'linear',
     responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         }
       },
     ]
   });
 }
 
-// update Ezba Slide
-export const updateEzbaSlide = (event, slick, currSlide) => {
-  $('#ezbaSlider').carousel(currSlide);
-}
-
-// init swalif slider
-export const initSwalifSlider = (element) => {
+// init Testimonial Slider
+export const initTestimonialSlider = (element) => {
   $(element).slick({
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    rtl: true,
-    centerMode: true,
+    dots: false,
     arrows: false,
-    responsive: [
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 3,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 2,
-          infinite: true
-        }
-      },
-      {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        infinite: true
-      }
-    }, 
-    {
-
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        dots: true
-      }
-
-    }]
+    infinite: true,
+    focusOnSelect: true,
+    autoplay: true,
+    // fade: true,
+    // cssEase: 'linear'
   });
 }
+
+

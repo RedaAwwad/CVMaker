@@ -1,14 +1,9 @@
-import './vendor';
-import { toggleMenu, closeMenu } from './functions/menu';
 import { reveal } from './functions/animation';
 import { 
-  initServicesSlider,
+  initTemplatesSlider,
+  initTestimonialSlider,
   navigateToNextSlide,
   navigateToPrevSlide,
-  updateHeaderSlideNumber,
-  initEzbaSliderNavigator,
-  updateEzbaSlide,
-  initSwalifSlider
 } from './functions/sliders';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,11 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // toggle | close Burger Menu
-  // menuBurger.addEventListener('click', toggleMenu);
-  // menuOverlay.addEventListener('click', closeMenu);
-  
-
   // init reveal animation
   window.addEventListener("scroll", reveal);
 
@@ -43,6 +33,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // if($('.our-main-services__slides .services-slide')) {
   //   initServicesSlider('.our-main-services__slides .services-slide');
   // }
+
+  // templates slider
+  if($('.templates-slider')) {
+    initTemplatesSlider('.templates-slider');
+
+    $('#templateSliderPrev').on('click', function () {
+      $('.templates-slider').slick('slickPrev');
+    });
+
+    $('#templateSliderNext').on('click', function () {
+      $('.templates-slider').slick('slickNext');
+    });
+  }
+
+  // testimonial slider
+  if($('.testimonial-slider')) {
+    initTestimonialSlider('.testimonial-slider');
+
+    $('#testimonialSliderPrev').on('click', function () {
+      $('.testimonial-slider').slick('slickPrev');
+    });
+
+    $('#testimonialSliderNext').on('click', function () {
+      $('.testimonial-slider').slick('slickNext');
+    });
+  }
 
   // header slider navigator
   $('#headerSliderNext').on('click', () => {
@@ -54,41 +70,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $('.header__slider').on('afterChange', updateHeaderSlideNumber);
 
-  // ezba slider
-  if($('.ezba-slider-nav') && $('#ezbaSlider')) {
-
-    // ezba slider config
-    $('#ezbaSlider').carousel({ interval: false });
-
-    // init ezba slide navigator
-    initEzbaSliderNavigator('.ezba-slider-nav');
-    
-    $('.ezba-slider-nav .slick-slide:not(.slick-cloned)').each((i, e) => {
-      $(e).on('click', () => updateEzbaSlide(null, null, i));
-    });
-
-    $('.ezba-slider-nav').on('afterChange', updateEzbaSlide);
-  }
-
-  // swalif slider
-  if($('.swalif-slider')) {
-    initSwalifSlider('.swalif-slider');
-  }
-
-  // searching about available places
-  const searchForm = $('.search-form').find('.search-form__place-name');
-
-  $(searchForm).on('focus', function () {
-    toggleResultsMenu(this, true);
-  });
-
-  $('.search-form, .search-form__results').on('click', function(e) {
-    e.stopPropagation();
-  });
-
-  $(searchForm).on('blur', function () {
-    toggleResultsMenu(this, false)
-  });
-
- 
+  
 });

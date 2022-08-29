@@ -23,7 +23,7 @@ const PATHS = {
   sass: './src/scss/**/*.scss',
   imgs: './src/assets/imgs/*',
   'vendor.js': [
-    '.src/js/vendor'
+    './src/js/vendor'
   ],
   'vendor.css': './src/scss/vendor/vendor.scss',
   fonts: './src/assets/fonts/*'
@@ -86,6 +86,28 @@ const compileJS = () => {
     .pipe(browserSync.stream());
 }
 
+const vendorJS = () => {
+  let b = browserify({
+    basedir: ".",
+    debug: true,
+    entries: PATHS['vendor.js'],
+    cache: {},
+    packageCache: {},
+  }).transform("babelify", {
+    presets: ["es2015"],
+    extensions: [".js"],
+  });
+
+  return b.bundle()
+    .pipe(source("vendor.bundle.js"))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(terser())
+    .pipe(sourcemaps.write())
+    .pipe(dest(`${PATHS['dist']}/js/vendor`))
+    .pipe(browserSync.stream());
+}
+
 // sass
 const compileSass = () => {
   return src('./src/scss/main.scss', { allowEmpty: true })
@@ -145,7 +167,7 @@ const watchTasks = () => {
 
   watch(PATHS['fonts'], moveFonts);
   watch(PATHS['html'], moveHTML);
-  // watch(PATHS['vendor.js'], vendorJS);
+  watch(PATHS['vendor.js'], vendorJS);
   watch(PATHS['vendor.css'], vendorCSS);
   watch(PATHS['sass'], compileSass);
   watch('./src/js/**/*.js', compileJS);
@@ -157,7 +179,7 @@ exports.default = series(
   cleanDist,
   moveFonts,
   moveHTML,
-  // vendorJS,
+  vendorJS,
   vendorCSS,
   compileJS,
   compileSass,
@@ -171,7 +193,7 @@ exports.build = series(
   cleanDist,
   moveFonts,
   moveHTML,
-  // vendorJS,
+  vendorJS,
   vendorCSS,
   compileSass,
   compileJS,
