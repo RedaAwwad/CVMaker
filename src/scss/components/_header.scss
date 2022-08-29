@@ -160,8 +160,8 @@
 
         @media screen and (max-width: 767px) {
           height: 80%;
+          overflow-y: auto;
           padding-top: 1rem;
-          // overflow-y: auto;
         }
 
         h4 {
