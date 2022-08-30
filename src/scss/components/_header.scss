@@ -3,11 +3,11 @@
 .header {
   position: relative;
   min-height: 100vh;
-  // background-color: $dark;
 
   &__inner {
     min-height: 1px;
     height: 85px;
+    background-color: $dark;
 
     .navbar-brand.inner {
       position: relative;
@@ -44,7 +44,7 @@
 
     &::before {
       content: '';
-      position: absolute;
+      position: fixed;
       left: 50%;
       top: -160px;
       transform: translateX(-50%);
