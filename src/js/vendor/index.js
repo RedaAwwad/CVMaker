@@ -7,3 +7,6 @@ import 'bootstrap';
 
 // slick
 import 'slick-carousel';
+
+// lightbox2
+import 'lightbox2';

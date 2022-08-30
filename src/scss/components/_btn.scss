@@ -8,6 +8,11 @@
     box-shadow: none;
   }
 
+  &.btn-sm {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.9rem;
+  }
+
   &-primary {
     padding: 0.9rem 1rem !important;
     font-weight: 600;

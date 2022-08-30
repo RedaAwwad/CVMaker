@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+
+.resumes {
+
+  &__content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .card {
+      // border: 0;
+      transition: 300ms ease;
+
+      &:hover {
+        box-shadow: $shadow;
+      }
+
+      &-img {
+        height: 280px;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      &-body {
+        padding: 1rem 0.75rem;
+      }
+
+      &-title {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+      }
+
+      .resume-card__price {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        min-width: 80px;
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        font-size: 0.9rem;
+        color: $white;
+
+        &.free {
+          background-color: $accent;
+        }
+        &.premium {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}

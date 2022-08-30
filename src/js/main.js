@@ -1,10 +1,12 @@
 import { reveal } from './functions/animation';
-import { 
+import {
+  initServicesSlider,
   initTemplatesSlider,
   initTestimonialSlider,
-  navigateToNextSlide,
-  navigateToPrevSlide,
+  initTestimonialSliderNavigator,
 } from './functions/sliders';
+
+import "./functions/counter-animation";
 
 document.addEventListener('DOMContentLoaded', () => {
   // toggle header menu
@@ -30,12 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // services slider
-  // if($('.our-main-services__slides .services-slide')) {
-  //   initServicesSlider('.our-main-services__slides .services-slide');
-  // }
+  if($('.our-main-services__slides')) {
+    initServicesSlider('.our-main-services__slides');
+  }
 
   // templates slider
-  if($('.templates-slider')) {
+  if($('.templates-slider').length) {
     initTemplatesSlider('.templates-slider');
 
     $('#templateSliderPrev').on('click', function () {
@@ -48,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // testimonial slider
-  if($('.testimonial-slider')) {
+  if($('.testimonial-slider').length) {
     initTestimonialSlider('.testimonial-slider');
 
     $('#testimonialSliderPrev').on('click', function () {
@@ -58,17 +60,15 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#testimonialSliderNext').on('click', function () {
       $('.testimonial-slider').slick('slickNext');
     });
+
+    $('.testimonial-slider').on('afterChange', function (event, slick, slide) {
+      $('.testimonial-slider__navigrator').slick('slickGoTo', slide);
+    });
   }
 
-  // header slider navigator
-  $('#headerSliderNext').on('click', () => {
-    navigateToNextSlide('.header__slider');
-  });
-  $('#headerSliderPrev').on('click', () => {
-    navigateToPrevSlide('.header__slider');
-  });
+  // testimonial slider navigrator
+  if($('.testimonial-slider__navigrator').length) {
+    initTestimonialSliderNavigator('.testimonial-slider__navigrator');
+  }
 
-  $('.header__slider').on('afterChange', updateHeaderSlideNumber);
-
-  
 });

@@ -1,44 +1,25 @@
 // init services slider
 export const initServicesSlider = (element, interval = 3000) => {
-  let currentEleIndex = 0;
-  let prevEleIndex = 2;
-  const slides = document.querySelectorAll(element);
-  setInterval(() => {
-
-    for (let idx = 0; idx < slides.length; idx++) {
-      
-      if(currentEleIndex == idx) {
-        let nextEleIdx = (idx + 1);
-        
-        slides[idx].classList.remove('active');
-
-        if(nextEleIdx === slides.length) {
-          slides[0].classList.add('active');
-          slides[idx].classList.add('last');
-
-          prevEleIndex = idx;
-          currentEleIndex = 0;
-        } else {
-          console.log(slides[nextEleIdx]);
-
-          currentEleIndex++;
-
-          slides[nextEleIdx].classList.add('active');
-          slides[prevEleIndex].classList.remove('last');
+  $(element).slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    // focusOnSelect: true,
+    autoplay: true,
+    rtl: true,
+    // fade: true,
+    // cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
         }
-      }
-    }
-  }, interval);
-}
-
-// navigate to next slide
-export const navigateToNextSlide = (sliderElement) => {
-  $(sliderElement).slick('slickNext');
-}
-
-// navigate to prev slide
-export const navigateToPrevSlide = (sliderElement) => {
-  $(sliderElement).slick('slickPrev');
+      },
+    ]
+  });
 }
 
 // init Templates Slider
@@ -72,11 +53,23 @@ export const initTestimonialSlider = (element) => {
     dots: false,
     arrows: false,
     infinite: true,
-    focusOnSelect: true,
-    autoplay: true,
-    // fade: true,
-    // cssEase: 'linear'
+    // autoplay: true,
   });
 }
 
+// init Testimonial Slider Navigator
+export const initTestimonialSliderNavigator = (element) => {
+  $(element).slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    // focusOnSelect: true,
+    touchMove: false,
+    draggable: false,
+    // fade: true,
+    cssEase: 'linear'
+  });
+}
 
