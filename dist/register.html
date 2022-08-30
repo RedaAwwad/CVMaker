@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="assets/imgs/logo.svg" type="image" sizes="16x16">
+        <title>CV Maker | Register page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="This is meta description Sample.">
+        <meta name="keywords" content="CV Maker">
+        <link rel="canonical" href="http://example.com/" />
+        <meta name="robots" content="index, follow">
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="TITLE OF YOURPOST OR PAGE" />
+        <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+        <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+        <meta property="og:url" content="PERMALINK" />
+        <meta property="og:site_name" content="SITE NAME" />
+        
+        <link rel="stylesheet" href="css/vendor/vendor.bundle.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    
+    </head>
+    <body>
+
+    <main class="login-page overflow-hidden">
+      <section class="login-page__img">
+        <div class="login-page__img--content text-center">
+          <a href="/" class="logo btn p-1">LOGO</a>
+          <h1>Create your resume with us</h1>
+        </div>
+      </section>
+      <section class="login-page__content container">
+        <div class="row w-100 h-100 py-5 overflow-auto justify-content-center">
+          <div class="col-md-8 col-lg-10 col-xl-8 mx-auto d-flex flex-column justify-content-center">
+            <div class="mb-4">
+              <h2 class="login-page__title mb-3">Register</h2>
+              <h2 class="login-page__sub-title">Nave an account? <a href="/login.html" class="btn p-0">Sign in</a></h2>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirm_password" required>
+              </div>
+             
+              <div class="d-flex gap pt-3">
+                <button type="submit" class="btn btn-login btn-primary">
+                  Register
+                </button>
+                <a href="/" class="btn btn-login btn-secondary">
+                  Cancel
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/vendor/vendor.bundle.js"></script>
+    <script src="./js/main.bundle.js"></script>
+  </body>
+</html>

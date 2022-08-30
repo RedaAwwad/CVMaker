@@ -1,17 +1,88 @@
+@use '../abstracts' as *;
+
 .card {
-  &-zad {
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 20px 40px 0px #A7B8CA;
-  }
-  
   &-title {
     font-family: 'Tajawal Bold', Arial, Helvetica, sans-serif;
   }
 
-  &-body {
-    padding: 1rem 0.5rem 0.5rem;
+  &.resume-card {
+    // border: 0;
+    transition: 300ms ease;
+
+    &:hover {
+      box-shadow: $shadow;
+    }
+
+    .card-img {
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .card-body {
+      padding: 1rem 0.75rem;
+    }
+
+    .card-title {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .resume-card__price {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      min-width: 80px;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      color: $white;
+
+      &.free {
+        background-color: $accent;
+      }
+      &.premium {
+        background-color: $red;
+      }
+    }
   }
- 
+
+  &.blog-card {
+    border: 0;
+    text-align: left;
+
+    &:hover {
+      .card-img {
+        box-shadow: $shadow;
+        transform: scale(1.02);
+      }
+    }
+
+    .card-img {
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 1rem;
+      transition: 300ms ease;
+    }
+
+    .card-body {
+      padding: 1rem 0;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      color: $dark;
+    }
+
+    .card-date {
+      gap: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+    }
+  }
 }

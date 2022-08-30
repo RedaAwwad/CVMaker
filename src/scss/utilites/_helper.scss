@@ -105,6 +105,10 @@
   &-lg {
     gap: 1.5rem;
   }
+
+  &-xl {
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -115,11 +119,17 @@
 
 .page-head {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   background-color: $bg;
   
   h1 {
     color: $accent;
+  }
+
+  @media screen and (max-width: 576px) {
+    h1 {
+      font-size: 2rem;
+    }
   }
 }
 
