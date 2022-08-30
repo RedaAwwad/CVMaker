@@ -26,7 +26,8 @@ const PATHS = {
     './src/js/vendor'
   ],
   'vendor.css': './src/scss/vendor/vendor.scss',
-  fonts: './src/assets/fonts/*'
+  fonts: './src/assets/fonts/*',
+  video: './src/assets/video/*',
 }
 
 // clean
@@ -48,6 +49,12 @@ const moveHTML = () => {
 const moveFonts = () => {
   return src(PATHS['fonts'], { allowEmpty: true })
     .pipe(dest(`${PATHS['dist']}/assets/fonts`))
+    .pipe(browserSync.stream());
+}
+
+const moveVideo = () => {
+  return src(PATHS['video'], { allowEmpty: true })
+    .pipe(dest(`${PATHS['dist']}/assets/video`))
     .pipe(browserSync.stream());
 }
 
@@ -165,8 +172,9 @@ const watchTasks = () => {
     port: process.env.PORT || 5000
   });
 
-  watch(PATHS['fonts'], moveFonts);
   watch(PATHS['html'], moveHTML);
+  watch(PATHS['fonts'], moveFonts);
+  watch(PATHS['video'], moveVideo);
   watch(PATHS['vendor.js'], vendorJS);
   watch(PATHS['vendor.css'], vendorCSS);
   watch(PATHS['sass'], compileSass);
@@ -178,6 +186,7 @@ const watchTasks = () => {
 exports.default = series(
   cleanDist,
   moveFonts,
+  moveVideo,
   moveHTML,
   vendorJS,
   vendorCSS,
@@ -192,6 +201,7 @@ exports.default = series(
 exports.build = series(
   cleanDist,
   moveFonts,
+  moveVideo,
   moveHTML,
   vendorJS,
   vendorCSS,
