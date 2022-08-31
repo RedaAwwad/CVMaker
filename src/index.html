@@ -24,39 +24,937 @@
     </head>
     <body>
 
-    <!-- header -->
-    <header class="header overflow-hidden" data-vide-bg="/assets/video/interview.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
-        <!-- header menu -->
-        <div class="header__menu">
-            <!-- <div class="shape header__shape">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div> -->
-            <div class="d-flex justify-content-center">
-                <button id="btnMenu" class="btn btn-menu p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                    </svg>
-                </button>
-            </div>
-            <div id="headerMenu" class="header__menu-content">
+        <!-- resume btn -->
+        <div class="resume-btn">
+            <a href="/resumes.html" class="btn p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                <line x1="16" y1="5" x2="19" y2="8" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- header -->
+        <header class="header overflow-hidden" data-vide-bg="/assets/video/interview.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
+            <!-- header menu -->
+            <div class="header__menu">
+                <!-- <div class="shape header__shape">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+                <div class="d-flex justify-content-center">
+                    <button id="btnMenu" class="btn btn-menu p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="headerMenu" class="header__menu-content">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-dark px-3 px-sm-0">
+                            <a class="navbar-brand" href="/">
+                            <span>LOGO</span>
+                            </a>
+                            
+                            <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/resumes.html">Resumes</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="/blog.html">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login.html">Login</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </nav>
+                        <div class="row mx-0 menu-links nice-scroll">
+                            <div class="col-lg-1 col-xl-2"></div>
+                            <div class="col-md-11 col-lg-10 col-xl-8 mb-4 mb-md-0">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 mb-md-5">
+                                        <h4>Resumes</h4>
+                                        <p>Getting that dream job can seem like an impossible task.
+                                            We’re here to change that. Give yourself a real advantage
+                                            with the best online resume maker</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4 mb-md-5">
+                                        <h4>Resumes</h4>
+                                        <p>Getting that dream job can seem like an impossible task.
+                                            We’re here to change that. Give yourself a real advantage
+                                            with the best online resume maker</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4 mb-md-5">
+                                        <h4>Resumes</h4>
+                                        <p>Getting that dream job can seem like an impossible task.
+                                            We’re here to change that. Give yourself a real advantage
+                                            with the best online resume maker</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4 mb-md-5">
+                                        <h4>Resumes</h4>
+                                        <a href="/resumes.html" class="btn btn-primary fw-semibold py-2">
+                                            Create Your Resume
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-lg-1 col-xl-2 position-relative">
+                                <ul class="social-media d-flex flex-md-column align-items-center">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <line x1="5" y1="9" x2="19" y2="9" />
+                                                <line x1="5" y1="15" x2="19" y2="15" />
+                                                <line x1="11" y1="4" x2="7" y2="20" />
+                                                <line x1="17" y1="4" x2="13" y2="20" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="mx-4">
+                                        <a href="#" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 22 18">
+                                                <path d="M22,2.131a8.958,8.958,0,0,1-2.593.715A4.551,4.551,0,0,0,21.392.332a9,9,0,0,1-2.866,1.1,4.51,4.51,0,0,0-7.809,3.11,4.566,4.566,0,0,0,.117,1.036A12.784,12.784,0,0,1,1.531.831,4.569,4.569,0,0,0,2.928,6.9,4.459,4.459,0,0,1,.884,6.329c0,.019,0,.039,0,.058A4.539,4.539,0,0,0,4.5,10.842a4.5,4.5,0,0,1-2.038.079,4.522,4.522,0,0,0,4.216,3.156,9.017,9.017,0,0,1-5.606,1.945A9.028,9.028,0,0,1,0,15.958,12.7,12.7,0,0,0,6.918,18,12.8,12.8,0,0,0,19.761,5.07c0-.2,0-.393-.013-.588A9.188,9.188,0,0,0,22,2.131Z" fill="#f9f6e5"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" viewBox="0 0 10.798 19.401">
+                                                <path d="M10.392,0,7.8,0a4.482,4.482,0,0,0-4.79,4.775v2.2H.407a.4.4,0,0,0-.407.4v3.19a.4.4,0,0,0,.407.4h2.6v8.048a.4.4,0,0,0,.407.4h3.4a.4.4,0,0,0,.407-.4V10.957h3.045a.4.4,0,0,0,.407-.4V7.372a.391.391,0,0,0-.119-.28.413.413,0,0,0-.288-.116H7.224V5.11c0-.9.22-1.352,1.423-1.352h1.745a.4.4,0,0,0,.407-.4V.4A.4.4,0,0,0,10.392,0Z" transform="translate(0)" fill="#f9f6e5"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnCloseMenu" class="btn btn-close-menu p-1">
+                        <img src="assets/imgs/close.svg" alt="close icon">
+                    </button>
+                </div>
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-dark px-3 px-sm-0">
                         <a class="navbar-brand" href="/">
-                           <span>LOGO</span>
+                        <span>LOGO</span>
                         </a>
-                        
-                        <div class="collapse navbar-collapse">
-                          <ul class="navbar-nav mx-auto">
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="header__bg row">
+                <div class="col-6 col-sm-4 col-lg-3 p-3">
+                    <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 p-3">
+                    <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 p-3">
+                    <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 d-sm-none d-lg-block p-3">
+                    <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
+                </div>
+            </div> -->
+            <div class="header__content container px-0 px-sm-3">
+                <!-- header content -->
+                <div class="row header__body justify-content-center align-items-center text-center">
+                    <div class="col-lg-8 mx-auto header__body--text mb-sm-5 mb-lg-0">
+                        <h1 class="slide-up">
+                            Use The Best 
+                            <span>RESUME MAKER</span>
+                            As Your Guide
+                        </h1>
+                        <p class="mb-4 slide-up">
+                            Getting that dream job can seem like an impossible task. We’re here to change that. Give yourself a real advantage with the best online resume maker
+                        </p>
+                        <div class="mb-2 slide-up">
+                            <a href="/resumes.html" class="btn btn-primary fw-semibold">
+                                Create Resume Online
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center py-sm-3">
+                        <button id="btnScrollDown" class="btn btn-scroll p-2">
+                            <img width="40" src="assets/imgs/scroll-down.svg" alt="down">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- /header -->
+
+        <main>
+            <div class="overflow-hidden">
+                <!-- partners -->
+                <section class="partners">
+                    <div class="container">
+                        <div class="partners__slider">
+                            <div>
+                                <img src="assets/imgs/client_1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_4.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_5.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_6.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_7.png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/imgs/client_8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- /partners -->
+
+                <!-- services -->
+                <section id="servicesSection" class="our-main-services">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div dir="rtl" class="col-12 col-md-6 order-2 order-md-1 slides-container">
+                                <div class="our-main-services__slides">
+                                    <div>
+                                        <div class="services-slide">
+                                            <div class="icon">
+                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
+                                            </div>
+                                            <h3>Link Building
+                                                & Content
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet
+                                                adicing elit maecenas sa faubus
+                                                mollis interdum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="services-slide">
+                                            <div class="icon">
+                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
+                                            </div>
+                                            <h3>Lorem ipsum dolor</h3>
+                                            <p>Lorem ipsum dolor sit amet
+                                                adicing elit maecenas sa faubus
+                                                mollis interdum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="services-slide">
+                                            <div class="icon">
+                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
+                                            </div>
+                                            <h3>Elit maecenas sa faubus</h3>
+                                            <p>Lorem ipsum dolor sit amet
+                                                adicing elit maecenas sa faubus
+                                                mollis interdum</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="services-slide">
+                                            <div class="icon">
+                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
+                                            </div>
+                                            <h3>Faubus mollis interdum </h3>
+                                            <p>Lorem ipsum dolor sit amet
+                                                adicing elit maecenas sa faubus
+                                                mollis interdum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 order-1 order-md-2 our-main-services__content bg-white">
+                                <div class="mb-4">
+                                    <h2 class="section__title"> 
+                                        Services
+                                        <div class="section__title--padding">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </h2>
+                                    <p>We want to simplify resume creation for job seekers globally.
+                                        Our goal is to help you land your next job as quickly as
+                                        possible.</p>
+                                    <p>Instead of manuaully creating resumes in Word or Pages, you
+                                        can use SimpleCV and create your resume in a matter of
+                                        Link Building minutes, with readability optimized templates to choose from.</p>
+        
+                                    <div>
+                                        <a href="/" class="btn btn-primary-outline d-inline-flex align-items-center">
+                                            <span>Create Resume</span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <polyline points="7 7 12 12 7 17" />
+                                                    <polyline points="13 7 18 12 13 17" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- services -->
+
+                <!-- templates -->
+                <section class="templates overflow-hidden">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0 position-relative">
+                                <div class="shape templates__shape">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="mb-4">
+                                    <h2 class="section__title"> 
+                                        Our Creative Templates
+                                        <div class="section__title--padding">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </h2>
+                                    <p class="templates-subtitle mb-4">Use any of our templates for free. Pick the style your
+                                        prefer. Personalize your resume as much you wish.</p>
+                                    <a href="/resumes.html" class="btn btn-primary">
+                                        See all Templates
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 templates-slider__container">
+                                <div class="templates-slider__control">
+                                    <button id="templateSliderPrev" class="btn btn-control">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <polyline points="6 15 12 9 18 15" />
+                                        </svg>
+                                    </button>
+                                    <button id="templateSliderNext" class="btn btn-control">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <polyline points="6 9 12 15 18 9" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="templates-slider">
+                                    <div>
+                                        <div class="templates-slider__slide">
+                                            <img src="assets/imgs/cv.jpg" alt="cv">
+
+                                            <div class="caption">
+                                                <a href="/" class="btn btn-light">
+                                                    Create Now
+                                                </a>
+                                                <div>
+                                                    <div class="price">
+                                                        FREE
+                                                    </div>
+                                                    <!-- rate -->
+                                                    <div class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="templates-slider__slide">
+                                            <img src="assets/imgs/cv.png" alt="cv">
+
+                                            <div class="caption">
+                                                <a href="/" class="btn btn-light">
+                                                    Create Now
+                                                </a>
+                                                <div>
+                                                    <div class="price">
+                                                        40 $
+                                                    </div>
+                                                    <!-- rate -->
+                                                    <div class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="templates-slider__slide">
+                                            <img src="assets/imgs/cv.jpg" alt="cv">
+
+                                            <div class="caption">
+                                                <a href="/" class="btn btn-light">
+                                                    Create Now
+                                                </a>
+                                                <div>
+                                                    <div class="price">
+                                                        FREE
+                                                    </div>
+                                                    <!-- rate -->
+                                                    <div class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="templates-slider__slide">
+                                            <img src="assets/imgs/cv.png" alt="cv">
+
+                                            <div class="caption">
+                                                <a href="/" class="btn btn-light">
+                                                    Create Now
+                                                </a>
+                                                <div>
+                                                    <div class="price">
+                                                        80 $
+                                                    </div>
+                                                    <!-- rate -->
+                                                    <div class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- templates -->
+        
+                <!-- steps section -->
+                <section class="steps mb-5">
+                    <div class="container">
+                        <div class="text-center mb-5 pb-3">
+                            <h2 class="section__title d-inline-block mb-4">
+                                How to Create Resume-CV Online
+                                <div class="section__title--padding center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </h2>
+                            <p class="section__text mb-1">Use any of our templatesfor free. Pick the style your prefer.</p>
+                            <p class="section__text">Personalize your resume as much you wish.
+                            </p>
+                        </div>
+                        <div class="row steps__features justify-content-center">
+                            <div class="col-12 col-md-6 col-xl-4 feature-card d-flex mb-3 mb-xl-0 reveal">
+                                <div>
+                                    <div class="mb-3 icon">
+                                        1
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="title">Select A Template
+                                    </h3>
+                                    <p class="text">
+                                        Choose from a selection of recruiterapproved layout designsfor different job types
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 feature-card d-flex mb-3 mb-xl-0 reveal">
+                                <div>
+                                    <div class="mb-3 icon">
+                                        2
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="title">Optimize Your Content
+                                    </h3>
+                                    <p class="text">
+                                        And adding or removing a specific section
+    based on your needsis no problem and you
+    get layout and contentsuggestionsso that
+    your resume looks perfect
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 feature-card d-flex mb-3 mb-xl-0 reveal">
+                                <div>
+                                    <div class="mb-3 icon">
+                                        3
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="title">Publish Or Download PDF
+                                    </h3>
+                                    <p class="text">
+                                        Once your content isfinished, you can publish link
+    or dowwnload PDF. Your latest version issaved and
+    you can always go back to make edits.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- steps section -->
+
+                <!-- memberships section -->
+                <section class="memberships section-padding">
+                    <div class="container">
+                        <div class="text-center mb-5 pb-3">
+                            <h2 class="section__title d-inline-block mb-4">
+                                Download Your Resume Now!
+                                <div class="section__title--padding center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </h2>
+                            <p class="section__text mb-1">To download your resume simply sign up for your Premium Membership.</p>
+                            <p class="section__text">As an added bonus, you’ll gain instant access to our Premium Templates and Color Pallete.
+                            </p>
+                        </div>
+                        <div class="row mx-0 w-100">
+                            <div class="col-lg-10 mx-auto px-0">
+                                <div class=" memberships-cards__container">
+                                    <div class="row justify-content-center ">
+                                        <div class="col-4 col-md-6 col-xl-4 d-flex mb-4">
+                                            <div class="memberships__card h-100 mb-3 mb-xl-0 reveal">
+                                                <h3 class="memberships__card--title">
+                                                    It’s
+                                                    <span>Free</span>
+                                                </h3>
+                                                <p class="memberships__card--sub-title">Begginer</p>
+                                                <ul>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                </ul>
+                                                <div class="text-center">
+                                                    <a class="btn btn-start" href="/">
+                                                        <span>Get Started</span>
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg"  width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <polyline points="9 6 15 12 9 18" />
+                                                        </svg></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-md-6 col-xl-4 d-flex mb-4">
+                                            <div class="memberships__card best-seller h-100 mb-3 mb-xl-0 reveal">
+                                                <div class="card-ribbon">
+                                                    <span>most popular</span>
+                                                </div>
+                                                <h3 class="memberships__card--title">
+                                                    $
+                                                    <span>17.95</span>
+                                                </h3>
+                                                <p class="memberships__card--sub-title">
+                                                    Starter
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                </ul>
+                                                <div class="text-center">
+                                                    <a class="btn btn-start" href="/">
+                                                        <span>Get Started</span>
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg"  width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <polyline points="9 6 15 12 9 18" />
+                                                        </svg></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-md-6 col-xl-4 d-flex mb-4">
+                                            <div class="memberships__card h-100 mb-3 mb-xl-0 reveal">
+                                                <h3 class="memberships__card--title">
+                                                    $
+                                                    <span>29.95</span>
+                                                </h3>
+                                                <p class="memberships__card--sub-title">
+                                                    Premium
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                    <li>
+                                                        lorem is a good time 
+                                                    </li>
+                                                </ul>
+                                                <div class="text-center">
+                                                    <a class="btn btn-start" href="/">
+                                                        <span>Get Started</span>
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg"  width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                            <polyline points="9 6 15 12 9 18" />
+                                                        </svg></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- memberships section -->
+
+                <!-- testimonial -->
+                <section class="testimonial">
+                    <div class="container">
+                        <div class="text-center mb-4">
+                            <h2 class="section__title d-inline-block mb-4 text-white"> 
+                                Testimonial
+                                <div class="section__title--padding center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </h2>
+                            <p class="testimonial-subtitle">Lorem ipsum dolorsit amet, consetetursadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua. At vero eos et</p>
+                        </div>
+                        <div class="testimonial-slider__navigrator">
+                            <div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider__container">
+                            <div class="testimonial-slider__control">
+                                <button id="testimonialSliderPrev" class="btn btn-control">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <polyline points="6 15 12 9 18 15" />
+                                    </svg>
+                                </button>
+                                <button id="testimonialSliderNext" class="btn btn-control">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="testimonial-slider text-center">
+                                <div>
+                                    <div class="testimonial-slider__slide">
+                                        <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                        </p>
+                                        <div class="py-3 mb-4 text-white">
+                                            <h3>Md Julia Nichols</h3>
+                                            <span>Graphic Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="testimonial-slider__slide">
+                                        <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                        </p>
+                                        <div class="py-3 mb-4 text-white">
+                                            <h3>Md Julia Nichols</h3>
+                                            <span>UI UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="testimonial-slider__slide">
+                                        <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                        </p>
+                                        <div class="py-3 mb-4 text-white">
+                                            <h3>Md Julia Nichols</h3>
+                                            <span>Software Developer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="testimonial-slider__slide">
+                                        <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                        </p>
+                                        <div class="py-3 mb-4 text-white">
+                                            <h3>Md Julia Nichols</h3>
+                                            <span>Motion Graphic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- testimonial -->
+
+                <!-- stats -->
+                <section class="stats">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0 position-relative">
+                                <div class="mb-4 reveal">
+                                    <h2 class="section__title mb-3"> 
+                                        Trusted by
+                                        <span>10,000+</span>
+                                        user
+                                    </h2>
+                                    <p>
+                                        Discover why more than
+                                    </p>
+                                    <p>
+                                        <span>10,000</span> user choose Goresumecv.
+                                    </p>
+                                </div>
+                                <div class="mb-2 reveal">
+                                    <a href="/" class="btn btn-primary fw-semibold">
+                                        Create Resume Online
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 overflow-xs-auto">
+                                <div class="row mx-0 stats__card-container align-items-center">
+                                    <div class="col-6">
+                                        <div class="stats__shape-card reveal">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>CLIENTS</h4>
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="19" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                </svg></span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap">
+                                                <span class="value" count="34654"
+                                                style="color: #11044c;">
+                                                    0
+                                                </span>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1.8rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8dce97" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                        <line x1="12" y1="5" x2="12" y2="19" />
+                                                        <line x1="18" y1="11" x2="12" y2="5" />
+                                                        <line x1="6" y1="11" x2="12" y2="5" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="pb-4 d-flex justify-content-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10rem" height="8rem" viewBox="0 0 186.377 134.413"><g transform="translate(-265.623 -222.97)"><path d="M227,329.485c5.2-2.056-17.116,5.859,20.812-8.224,2.475-.919,5.3-2.036,8.185-3.26,42.5-18,10-47.75,46-61s51.75,7,78-8,27-52,27-52" transform="translate(42 26)" fill="none" stroke="#29abe2" stroke-width="3"/><g transform="translate(83 -126.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g><g transform="translate(128 -186.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g><g transform="translate(195 -191.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g><g transform="translate(236 -232.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g></g>
+                                            </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="stat-1">
+                                                    <span class="d-inline-block mb-3 value" count="1006" style="color: #11044c;">0</span>
+                                                    <h4>TODAY</h4>
+                                                </div>
+                                                <div class="stat-2"></div>
+                                                <div class="stat-3">
+                                                    <span class="d-inline-block mb-3 value" count="9564" style="color: #11044c;">0</span>
+                                                    <h4>THIS WEEK</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="stats__shape-card reveal d-flex align-items-center gap dark">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <circle cx="12" cy="12" r="9" />
+                                                    <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                                                    <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                                                    <path d="M11.5 3a17 17 0 0 0 0 18" />
+                                                    <path d="M12.5 3a17 17 0 0 1 0 18" />
+                                                </svg>
+                                            </div>
+                                            <div class="w-100">
+                                                <h4>Languages</h4>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="value" count="23">0</span>
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="stats__shape-card d-flex align-items-center gap">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#11044c" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" /><line x1="8" y1="8" x2="12" y2="8" /><line x1="8" y1="12" x2="12" y2="12" /><line x1="8" y1="16" x2="12" y2="16" />
+                                                </svg>
+                                            </div>
+                                            <div class="w-100">
+                                                <h4>Resumes</h4>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="value" count="100">0</span>
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="stats__shape-card reveal d-flex align-items-center gap primary">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1.8rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <circle cx="12" cy="7" r="4" />
+                                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                                </svg>
+                                            </div>
+                                            <div class="w-100">
+                                                <h4>User</h4>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="value" count="10000">0</span>
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- stats -->
+        
+            </div>
+        </main>
+        
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <div class="d-flex align-items-center mb-4">
+                            <a href="/" class="btn p-1">
+                                LOGO
+                                <!-- <img width="150" src="assets/imgs/logo.svg" alt="CV Maker"> -->
+                            </a>
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae at exercitationem alias unde. Minus commodi voluptatum molestiae accusamus.</p>
+                        <ul class="links d-flex align-items-center mb-2">
                             <li class="nav-item">
                                 <a class="nav-link" href="/resumes.html">Resumes</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="/blog.html">Blogs</a>
+                                <a class="nav-link" href="/blog.html">Blogs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacts</a>
@@ -64,906 +962,76 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/login.html">Login</a>
                             </li>
-                          </ul>
-                        </div>
-                    </nav>
-                    <div class="row mx-0 menu-links nice-scroll">
-                        <div class="col-lg-1 col-xl-2"></div>
-                        <div class="col-md-11 col-lg-10 col-xl-8 mb-4 mb-md-0">
-                            <div class="row">
-                                <div class="col-md-6 mb-4 mb-md-5">
-                                    <h4>Resumes</h4>
-                                    <p>Getting that dream job can seem like an impossible task.
-                                        We’re here to change that. Give yourself a real advantage
-                                        with the best online resume maker</p>
-                                </div>
-                                <div class="col-md-6 mb-4 mb-md-5">
-                                    <h4>Resumes</h4>
-                                    <p>Getting that dream job can seem like an impossible task.
-                                        We’re here to change that. Give yourself a real advantage
-                                        with the best online resume maker</p>
-                                </div>
-                                <div class="col-md-6 mb-4 mb-md-5">
-                                    <h4>Resumes</h4>
-                                    <p>Getting that dream job can seem like an impossible task.
-                                        We’re here to change that. Give yourself a real advantage
-                                        with the best online resume maker</p>
-                                </div>
-                                <div class="col-md-6 mb-4 mb-md-5">
-                                    <h4>Resumes</h4>
-                                    <a href="/resumes.html" class="btn btn-primary fw-semibold py-2">
-                                        Create Your Resume
-                                    </a>
-                                </div>
+                        </ul>
+                        <form action="POST">
+                            <div class="footer__form d-flex py-3">
+                                <input type="email" required class="form-control" placeholder="Your Email">
+                                <button type="submit" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                    <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                                    </svg>
+                                </button>
                             </div>
-                        </div>
-                        <div class="col-md-1 col-lg-1 col-xl-2 position-relative">
-                            <ul class="social-media d-flex flex-md-column align-items-center">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <line x1="5" y1="9" x2="19" y2="9" />
-                                            <line x1="5" y1="15" x2="19" y2="15" />
-                                            <line x1="11" y1="4" x2="7" y2="20" />
-                                            <line x1="17" y1="4" x2="13" y2="20" />
-                                          </svg>
-                                    </a>
-                                </li>
-                                <li class="mx-4">
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 22 18">
-                                            <path d="M22,2.131a8.958,8.958,0,0,1-2.593.715A4.551,4.551,0,0,0,21.392.332a9,9,0,0,1-2.866,1.1,4.51,4.51,0,0,0-7.809,3.11,4.566,4.566,0,0,0,.117,1.036A12.784,12.784,0,0,1,1.531.831,4.569,4.569,0,0,0,2.928,6.9,4.459,4.459,0,0,1,.884,6.329c0,.019,0,.039,0,.058A4.539,4.539,0,0,0,4.5,10.842a4.5,4.5,0,0,1-2.038.079,4.522,4.522,0,0,0,4.216,3.156,9.017,9.017,0,0,1-5.606,1.945A9.028,9.028,0,0,1,0,15.958,12.7,12.7,0,0,0,6.918,18,12.8,12.8,0,0,0,19.761,5.07c0-.2,0-.393-.013-.588A9.188,9.188,0,0,0,22,2.131Z" fill="#f9f6e5"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" viewBox="0 0 10.798 19.401">
-                                            <path d="M10.392,0,7.8,0a4.482,4.482,0,0,0-4.79,4.775v2.2H.407a.4.4,0,0,0-.407.4v3.19a.4.4,0,0,0,.407.4h2.6v8.048a.4.4,0,0,0,.407.4h3.4a.4.4,0,0,0,.407-.4V10.957h3.045a.4.4,0,0,0,.407-.4V7.372a.391.391,0,0,0-.119-.28.413.413,0,0,0-.288-.116H7.224V5.11c0-.9.22-1.352,1.423-1.352h1.745a.4.4,0,0,0,.407-.4V.4A.4.4,0,0,0,10.392,0Z" transform="translate(0)" fill="#f9f6e5"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <button id="btnCloseMenu" class="btn btn-close-menu p-1">
-                    <img src="assets/imgs/close.svg" alt="close icon">
-                </button>
             </div>
+            <div class="footer__copyright">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark px-3 px-sm-0">
-                    <a class="navbar-brand" href="/">
-                       <span>LOGO</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-        <!-- <div class="header__bg row">
-            <div class="col-6 col-sm-4 col-lg-3 p-3">
-                <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3">
-                <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3">
-                <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
-            </div>
-            <div class="col-6 col-sm-4 col-lg-3 d-sm-none d-lg-block p-3">
-                <img src="assets/imgs/cv.jpg" class="mw-100" alt="CV Maker">
-            </div>
-        </div> -->
-        <div class="header__content container px-0 px-sm-3">
-            <!-- header content -->
-            <div class="row header__body justify-content-center align-items-center text-center">
-                <div class="col-lg-8 mx-auto header__body--text mb-sm-5 mb-lg-0">
-                    <h1 class="slide-up">
-                        Use The Best 
-                        <span>RESUME MAKER</span>
-                        As Your Guide
-                    </h1>
-                    <p class="mb-4 slide-up">
-                        Getting that dream job can seem like an impossible task. We’re here to change that. Give yourself a real advantage with the best online resume maker
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+                    <p class="mb-0 order-2 order-sm-1">
+                        All rights reserved &copy; 2022
                     </p>
-                    <div class="mb-2 slide-up">
-                        <a href="/resumes.html" class="btn btn-primary fw-semibold">
-                            Create Resume Online
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 d-flex justify-content-center py-sm-3">
-                    <button id="btnScrollDown" class="btn btn-scroll p-2">
-                        <img width="40" src="assets/imgs/scroll-down.svg" alt="down">
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header> <!-- /header -->
-
-    <main>
-        <div class="overflow-hidden">
-            <!-- services -->
-            <section class="our-main-services">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div dir="rtl" class="col-12 col-md-6 order-2 order-md-1 slides-container">
-                            <div class="our-main-services__slides">
-                                <div>
-                                    <div class="services-slide">
-                                        <div class="icon">
-                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                        </div>
-                                        <h3>Link Building
-                                            & Content
-                                        </h3>
-                                        <p>Lorem ipsum dolor sit amet
-                                            adicing elit maecenas sa faubus
-                                            mollis interdum</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="services-slide">
-                                        <div class="icon">
-                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                        </div>
-                                        <h3>Lorem ipsum dolor</h3>
-                                        <p>Lorem ipsum dolor sit amet
-                                            adicing elit maecenas sa faubus
-                                            mollis interdum</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="services-slide">
-                                        <div class="icon">
-                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                        </div>
-                                        <h3>Elit maecenas sa faubus</h3>
-                                        <p>Lorem ipsum dolor sit amet
-                                            adicing elit maecenas sa faubus
-                                            mollis interdum</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="services-slide">
-                                        <div class="icon">
-                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                        </div>
-                                        <h3>Faubus mollis interdum </h3>
-                                        <p>Lorem ipsum dolor sit amet
-                                            adicing elit maecenas sa faubus
-                                            mollis interdum</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 order-1 order-md-2 our-main-services__content bg-white">
-                            <div class="mb-4">
-                                <h2 class="section__title"> 
-                                    Services
-                                    <div class="section__title--padding">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </h2>
-                                <p>We want to simplify resume creation for job seekers globally.
-                                    Our goal is to help you land your next job as quickly as
-                                    possible.</p>
-                                <p>Instead of manuaully creating resumes in Word or Pages, you
-                                    can use SimpleCV and create your resume in a matter of
-                                    Link Building minutes, with readability optimized templates to choose from.</p>
-    
-                                <div>
-                                    <a href="/" class="btn btn-primary-outline d-inline-flex align-items-center">
-                                        <span>Create Resume</span>
-                                        <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                <polyline points="7 7 12 12 7 17" />
-                                                <polyline points="13 7 18 12 13 17" />
-                                              </svg>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- services -->
-
-            <!-- templates -->
-            <section class="templates overflow-hidden">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-6 mb-4 mb-lg-0 position-relative">
-                            <div class="shape templates__shape">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="mb-4">
-                                <h2 class="section__title"> 
-                                    Our Creative Templates
-                                    <div class="section__title--padding">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </h2>
-                                <p class="templates-subtitle">Use any of our templates for free. Pick the style your
-                                    prefer. Personalize your resume as much you wish.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 templates-slider__container">
-                            <div class="templates-slider__control">
-                                <button id="templateSliderPrev" class="btn btn-control">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <polyline points="6 15 12 9 18 15" />
-                                      </svg>
-                                </button>
-                                <button id="templateSliderNext" class="btn btn-control">
-                                    <svg xmlns="http://www.w3.org/2000/svg"  width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <polyline points="6 9 12 15 18 9" />
-                                      </svg>
-                                </button>
-                            </div>
-                            <div class="templates-slider">
-                                <div>
-                                    <div class="templates-slider__slide">
-                                        <img src="assets/imgs/cv.jpg" alt="cv">
-
-                                        <div class="caption">
-                                            <a href="/" class="btn btn-light">
-                                                Create Now
-                                            </a>
-                                            <div>
-                                                <div class="price">
-                                                    FREE
-                                                </div>
-                                                <!-- rate -->
-                                                <div class="d-flex align-items-center">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="templates-slider__slide">
-                                        <img src="assets/imgs/cv.png" alt="cv">
-
-                                        <div class="caption">
-                                            <a href="/" class="btn btn-light">
-                                                Create Now
-                                            </a>
-                                            <div>
-                                                <div class="price">
-                                                    40 $
-                                                </div>
-                                                <!-- rate -->
-                                                <div class="d-flex align-items-center">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="templates-slider__slide">
-                                        <img src="assets/imgs/cv.jpg" alt="cv">
-
-                                        <div class="caption">
-                                            <a href="/" class="btn btn-light">
-                                                Create Now
-                                            </a>
-                                            <div>
-                                                <div class="price">
-                                                    FREE
-                                                </div>
-                                                <!-- rate -->
-                                                <div class="d-flex align-items-center">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="templates-slider__slide">
-                                        <img src="assets/imgs/cv.png" alt="cv">
-
-                                        <div class="caption">
-                                            <a href="/" class="btn btn-light">
-                                                Create Now
-                                            </a>
-                                            <div>
-                                                <div class="price">
-                                                    80 $
-                                                </div>
-                                                <!-- rate -->
-                                                <div class="d-flex align-items-center">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffd609" fill="#ffd609" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- templates -->
-    
-            <!-- steps section -->
-            <section class="steps mb-5">
-                <div class="container">
-                    <div class="text-center mb-5 pb-3">
-                        <h2 class="section__title d-inline-block mb-4">
-                            How to Create Resume-CV Online
-                            <div class="section__title--padding center">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </h2>
-                        <p class="section__text mb-1">Use any of our templatesfor free. Pick the style your prefer.</p>
-                        <p class="section__text">Personalize your resume as much you wish.
-                        </p>
-                    </div>
-                    <div class="row steps__features justify-content-center">
-                        <div class="col-12 col-md-6 col-xl-4 feature-card d-flex mb-3 mb-xl-0 reveal">
-                            <div>
-                                <div class="mb-3 icon">
-                                    1
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="title">Select A Template
-                                </h3>
-                                <p class="text">
-                                    Choose from a selection of recruiterapproved layout designsfor different job types
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 feature-card d-flex mb-3 mb-xl-0 reveal">
-                            <div>
-                                <div class="mb-3 icon">
-                                    2
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="title">Optimize Your Content
-                                </h3>
-                                <p class="text">
-                                    And adding or removing a specific section
-based on your needsis no problem and you
-get layout and contentsuggestionsso that
-your resume looks perfect
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 feature-card d-flex mb-3 mb-xl-0 reveal">
-                            <div>
-                                <div class="mb-3 icon">
-                                    3
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="title">Publish Or Download PDF
-                                </h3>
-                                <p class="text">
-                                    Once your content isfinished, you can publish link
-or dowwnload PDF. Your latest version issaved and
-you can always go back to make edits.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- steps section -->
-
-            <!-- memberships section -->
-            <section class="memberships section-padding">
-                <div class="container">
-                    <div class="text-center mb-5 pb-3">
-                        <h2 class="section__title d-inline-block mb-4">
-                            Download Your Resume Now!
-                            <div class="section__title--padding center">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </h2>
-                        <p class="section__text mb-1">To download your resume simply sign up for your Premium Membership.</p>
-                        <p class="section__text">As an added bonus, you’ll gain instant access to our Premium Templates and Color Pallete.
-                        </p>
-                    </div>
-                    <div class="row mx-0 w-100">
-                        <div class="col-lg-10 mx-auto px-0">
-                            <div class=" memberships-cards__container">
-                                <div class="row justify-content-center ">
-                                    <div class="col-4 col-md-6 col-xl-4 d-flex mb-4">
-                                        <div class="memberships__card h-100 mb-3 mb-xl-0 reveal">
-                                            <h3 class="memberships__card--title">
-                                                It’s
-                                                <span>Free</span>
-                                            </h3>
-                                            <p class="memberships__card--sub-title">Begginer</p>
-                                            <ul>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                            </ul>
-                                            <div class="text-center">
-                                                <a class="btn btn-start" href="/">
-                                                    <span>Get Started</span>
-                                                    <span><svg xmlns="http://www.w3.org/2000/svg"  width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <polyline points="9 6 15 12 9 18" />
-                                                      </svg></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-md-6 col-xl-4 d-flex mb-4">
-                                        <div class="memberships__card best-seller h-100 mb-3 mb-xl-0 reveal">
-                                            <h3 class="memberships__card--title">
-                                                $
-                                                <span>17.95</span>
-                                            </h3>
-                                            <p class="memberships__card--sub-title">
-                                                Starter
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                            </ul>
-                                            <div class="text-center">
-                                                <a class="btn btn-start" href="/">
-                                                    <span>Get Started</span>
-                                                    <span><svg xmlns="http://www.w3.org/2000/svg"  width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <polyline points="9 6 15 12 9 18" />
-                                                      </svg></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-md-6 col-xl-4 d-flex mb-4">
-                                        <div class="memberships__card h-100 mb-3 mb-xl-0 reveal">
-                                            <h3 class="memberships__card--title">
-                                                $
-                                                <span>29.95</span>
-                                            </h3>
-                                            <p class="memberships__card--sub-title">
-                                                Premium
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                                <li>
-                                                    lorem is a good time 
-                                                </li>
-                                            </ul>
-                                            <div class="text-center">
-                                                <a class="btn btn-start" href="/">
-                                                    <span>Get Started</span>
-                                                    <span><svg xmlns="http://www.w3.org/2000/svg"  width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                        <polyline points="9 6 15 12 9 18" />
-                                                      </svg></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- memberships section -->
-
-            <!-- testimonial -->
-            <section class="testimonial">
-                <div class="container">
-                    <div class="text-center mb-4">
-                        <h2 class="section__title d-inline-block mb-4 text-white"> 
-                            Testimonial
-                            <div class="section__title--padding center">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </h2>
-                        <p class="testimonial-subtitle">Lorem ipsum dolorsit amet, consetetursadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua. At vero eos et</p>
-                    </div>
-                    <div class="testimonial-slider__navigrator">
-                        <div>
-                            <div class="slide">
-                                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-slider__container">
-                        <div class="testimonial-slider__control">
-                            <button id="testimonialSliderPrev" class="btn btn-control">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <ul class="social-media order-1 order-sm-2">
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <polyline points="6 15 12 9 18 15" />
+                                    <line x1="5" y1="9" x2="19" y2="9" />
+                                    <line x1="5" y1="15" x2="19" y2="15" />
+                                    <line x1="11" y1="4" x2="7" y2="20" />
+                                    <line x1="17" y1="4" x2="13" y2="20" />
                                 </svg>
-                            </button>
-                            <button id="testimonialSliderNext" class="btn btn-control">
-                                <svg xmlns="http://www.w3.org/2000/svg"  width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <polyline points="6 9 12 15 18 9" />
-                                  </svg>
-                            </button>
-                        </div>
-                        <div class="testimonial-slider text-center">
-                            <div>
-                                <div class="testimonial-slider__slide">
-                                    <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    </p>
-                                    <div class="py-3 mb-4 text-white">
-                                        <h3>Md Julia Nichols</h3>
-                                        <span>Graphic Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="testimonial-slider__slide">
-                                    <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    </p>
-                                    <div class="py-3 mb-4 text-white">
-                                        <h3>Md Julia Nichols</h3>
-                                        <span>UI UX Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="testimonial-slider__slide">
-                                    <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    </p>
-                                    <div class="py-3 mb-4 text-white">
-                                        <h3>Md Julia Nichols</h3>
-                                        <span>Software Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="testimonial-slider__slide">
-                                    <p class="text">Lorem Ipsum issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sstandard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    </p>
-                                    <div class="py-3 mb-4 text-white">
-                                        <h3>Md Julia Nichols</h3>
-                                        <span>Motion Graphic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- testimonial -->
-
-            <!-- stats -->
-            <section class="stats">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-6 mb-4 mb-lg-0 position-relative">
-                            <div class="mb-4 reveal">
-                                <h2 class="section__title mb-3"> 
-                                    Trusted by
-                                    <span>10,000+</span>
-                                    user
-                                </h2>
-                                <p>
-                                    Discover why more than
-                                </p>
-                                <p>
-                                    <span>10,000</span> user choose Goresumecv.
-                                </p>
-                            </div>
-                            <div class="mb-2 reveal">
-                                <a href="/" class="btn btn-primary fw-semibold">
-                                    Create Resume Online
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 overflow-xs-auto">
-                            <div class="row mx-0 stats__card-container align-items-center">
-                                <div class="col-6">
-                                    <div class="stats__shape-card reveal">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <h4>CLIENTS</h4>
-                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                <circle cx="12" cy="12" r="1" />
-                                                <circle cx="12" cy="19" r="1" />
-                                                <circle cx="12" cy="5" r="1" />
-                                              </svg></span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap">
-                                            <span class="value" count="34654"
-                                            style="color: #11044c;">
-                                                0
-                                            </span>
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1.8rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8dce97" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                    <line x1="12" y1="5" x2="12" y2="19" />
-                                                    <line x1="18" y1="11" x2="12" y2="5" />
-                                                    <line x1="6" y1="11" x2="12" y2="5" />
-                                                  </svg>
-                                            </span>
-                                        </div>
-                                        <div class="pb-4 d-flex justify-content-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="10rem" height="8rem" viewBox="0 0 186.377 134.413"><g transform="translate(-265.623 -222.97)"><path d="M227,329.485c5.2-2.056-17.116,5.859,20.812-8.224,2.475-.919,5.3-2.036,8.185-3.26,42.5-18,10-47.75,46-61s51.75,7,78-8,27-52,27-52" transform="translate(42 26)" fill="none" stroke="#29abe2" stroke-width="3"/><g transform="translate(83 -126.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g><g transform="translate(128 -186.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g><g transform="translate(195 -191.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g><g transform="translate(236 -232.26)"><circle cx="5.5" cy="5.5" r="5.5" transform="translate(205 466.26)" fill="#0f358e"/><g transform="translate(209 470.26)" fill="#fff" stroke="#fff" stroke-width="1"><circle cx="1.5" cy="1.5" r="1.5" stroke="none"/><circle cx="1.5" cy="1.5" r="1" fill="none"/></g></g></g>
-                                        </svg>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="stat-1">
-                                                <span class="d-inline-block mb-3 value" count="1006" style="color: #11044c;">0</span>
-                                                <h4>TODAY</h4>
-                                            </div>
-                                            <div class="stat-2"></div>
-                                            <div class="stat-3">
-                                                <span class="d-inline-block mb-3 value" count="9564" style="color: #11044c;">0</span>
-                                                <h4>THIS WEEK</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="stats__shape-card reveal d-flex align-items-center gap dark">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                <circle cx="12" cy="12" r="9" />
-                                                <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                                                <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                                                <path d="M11.5 3a17 17 0 0 0 0 18" />
-                                                <path d="M12.5 3a17 17 0 0 1 0 18" />
-                                              </svg>
-                                        </div>
-                                        <div class="w-100">
-                                            <h4>Languages</h4>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <span class="value" count="23">0</span>
-                                                <span>+</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="stats__shape-card d-flex align-items-center gap">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#11044c" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" /><line x1="8" y1="8" x2="12" y2="8" /><line x1="8" y1="12" x2="12" y2="12" /><line x1="8" y1="16" x2="12" y2="16" />
-                                            </svg>
-                                        </div>
-                                        <div class="w-100">
-                                            <h4>Resumes</h4>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <span class="value" count="100">0</span>
-                                                <span>+</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="stats__shape-card reveal d-flex align-items-center gap primary">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1.8rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                                <circle cx="12" cy="7" r="4" />
-                                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                              </svg>
-                                        </div>
-                                        <div class="w-100">
-                                            <h4>User</h4>
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <span class="value" count="10000">0</span>
-                                                <span>+</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- stats -->
-    
-        </div>
-    </main>
-    
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="container">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <div class="d-flex align-items-center mb-4">
-                        <a href="/" class="btn p-1">
-                            LOGO
-                            <!-- <img width="150" src="assets/imgs/logo.svg" alt="CV Maker"> -->
-                        </a>
-                    </div>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae at exercitationem alias unde. Minus commodi voluptatum molestiae accusamus.</p>
-                    <ul class="links d-flex align-items-center mb-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/resumes.html">Resumes</a>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blog.html">Blogs</a>
+                        <li class="mx-4">
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 22 18">
+                                    <path d="M22,2.131a8.958,8.958,0,0,1-2.593.715A4.551,4.551,0,0,0,21.392.332a9,9,0,0,1-2.866,1.1,4.51,4.51,0,0,0-7.809,3.11,4.566,4.566,0,0,0,.117,1.036A12.784,12.784,0,0,1,1.531.831,4.569,4.569,0,0,0,2.928,6.9,4.459,4.459,0,0,1,.884,6.329c0,.019,0,.039,0,.058A4.539,4.539,0,0,0,4.5,10.842a4.5,4.5,0,0,1-2.038.079,4.522,4.522,0,0,0,4.216,3.156,9.017,9.017,0,0,1-5.606,1.945A9.028,9.028,0,0,1,0,15.958,12.7,12.7,0,0,0,6.918,18,12.8,12.8,0,0,0,19.761,5.07c0-.2,0-.393-.013-.588A9.188,9.188,0,0,0,22,2.131Z" fill="currentColor"/>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login.html">Login</a>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" viewBox="0 0 10.798 19.401">
+                                    <path d="M10.392,0,7.8,0a4.482,4.482,0,0,0-4.79,4.775v2.2H.407a.4.4,0,0,0-.407.4v3.19a.4.4,0,0,0,.407.4h2.6v8.048a.4.4,0,0,0,.407.4h3.4a.4.4,0,0,0,.407-.4V10.957h3.045a.4.4,0,0,0,.407-.4V7.372a.391.391,0,0,0-.119-.28.413.413,0,0,0-.288-.116H7.224V5.11c0-.9.22-1.352,1.423-1.352h1.745a.4.4,0,0,0,.407-.4V.4A.4.4,0,0,0,10.392,0Z" transform="translate(0)" fill="currentColor"/>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                    <form action="POST">
-                        <div class="footer__form d-flex py-3">
-                            <input type="email" required class="form-control" placeholder="Your Email">
-                            <button type="submit" class="btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <line x1="10" y1="14" x2="21" y2="3" />
-                                <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
-        </div>
-        <div class="footer__copyright">
-          <div class="container">
-            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
-                <p class="mb-0 order-2 order-sm-1">
-                    All rights reserved &copy; 2022
-                </p>
-                <ul class="social-media order-1 order-sm-2">
-                    <li>
-                        <a href="#" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <line x1="5" y1="9" x2="19" y2="9" />
-                                <line x1="5" y1="15" x2="19" y2="15" />
-                                <line x1="11" y1="4" x2="7" y2="20" />
-                                <line x1="17" y1="4" x2="13" y2="20" />
-                              </svg>
-                        </a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="#" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 22 18">
-                                <path d="M22,2.131a8.958,8.958,0,0,1-2.593.715A4.551,4.551,0,0,0,21.392.332a9,9,0,0,1-2.866,1.1,4.51,4.51,0,0,0-7.809,3.11,4.566,4.566,0,0,0,.117,1.036A12.784,12.784,0,0,1,1.531.831,4.569,4.569,0,0,0,2.928,6.9,4.459,4.459,0,0,1,.884,6.329c0,.019,0,.039,0,.058A4.539,4.539,0,0,0,4.5,10.842a4.5,4.5,0,0,1-2.038.079,4.522,4.522,0,0,0,4.216,3.156,9.017,9.017,0,0,1-5.606,1.945A9.028,9.028,0,0,1,0,15.958,12.7,12.7,0,0,0,6.918,18,12.8,12.8,0,0,0,19.761,5.07c0-.2,0-.393-.013-.588A9.188,9.188,0,0,0,22,2.131Z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" viewBox="0 0 10.798 19.401">
-                                <path d="M10.392,0,7.8,0a4.482,4.482,0,0,0-4.79,4.775v2.2H.407a.4.4,0,0,0-.407.4v3.19a.4.4,0,0,0,.407.4h2.6v8.048a.4.4,0,0,0,.407.4h3.4a.4.4,0,0,0,.407-.4V10.957h3.045a.4.4,0,0,0,.407-.4V7.372a.391.391,0,0,0-.119-.28.413.413,0,0,0-.288-.116H7.224V5.11c0-.9.22-1.352,1.423-1.352h1.745a.4.4,0,0,0,.407-.4V.4A.4.4,0,0,0,10.392,0Z" transform="translate(0)" fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
-          </div>
-        </div>
-    </footer> <!-- footer -->
+        </footer> <!-- footer -->
 
-    <script src="./js/vendor/vendor.bundle.js"></script>
-    <script src="./js/main.bundle.js"></script>
-  </body>
+        <script src="./js/vendor/vendor.bundle.js"></script>
+        <script src="./js/main.bundle.js"></script>
+
+        <script>
+        $(document).ready(function () {
+            /**
+             * show | hide resume button
+             */
+            $(window).on('scroll', function () {
+                if($(this).scrollTop() >= $('#servicesSection').offset().top) {
+                    $('.resume-btn').addClass('show');
+                } else {
+                    $('.resume-btn').removeClass('show');
+                }
+            });
+        });
+        </script>
+    </body>
 </html>

@@ -160,7 +160,8 @@
 }
 
 .header__body--text .slide-up,
-.header__slider .slide-up {
+.header__slider .slide-up
+.resumes__content .slide-up {
   &:nth-child(2) {
     animation-delay: 200ms;
   }

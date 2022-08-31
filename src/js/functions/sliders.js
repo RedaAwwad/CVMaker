@@ -10,7 +10,7 @@ export const initServicesSlider = (element, interval = 3000) => {
     autoplay: true,
     rtl: true,
     // fade: true,
-    // cssEase: 'linear',
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 576,
@@ -73,3 +73,35 @@ export const initTestimonialSliderNavigator = (element) => {
   });
 }
 
+// partners slider
+export const initPartnersSlider = (element) => {
+  $(element).slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
+  });
+}

@@ -1,6 +1,76 @@
 // Home page styles
 @use '../abstracts' as *;
 
+// resume-btn
+.resume-btn {
+  position: fixed;
+  left: 10%;
+  bottom: 60px;
+  z-index: 60;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $red;
+  box-shadow: $shadow;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms $bezier;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.92);
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    left: 15%;
+  }
+}
+
+/* ================
+partners
+================= */
+.partners {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $bg;
+
+  &__slider {
+
+    .slick-list {
+      margin: 0 -10px;
+    }
+    
+    .slick-slide>div {
+      padding: 0 10px;
+    }
+    
+    img {
+      height: 100px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: 1px solid $border;
+      border-radius: 5px;
+    }
+  }
+}
+
 /* ================
 our main services
 ================= */
@@ -43,28 +113,28 @@ our main services
     // justify-content: flex-end;
 
     .slick-list {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      overflow: initial !important;
+      padding-top: 5rem;
+      padding-bottom: 6rem;
+      // overflow: initial !important;
 
       .slick-track {
         position: relative;
 
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 19;
-          background-color: $white;
-        }
+        // &::after {
+        //   content: '';
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   width: 100%;
+        //   height: 100%;
+        //   z-index: 19;
+        //   background-color: $white;
+        // }
       }
     }
 
     .slick-slide {
-      min-height: 320px;
+      min-height: 380px;
       width: 100%;
       position: relative;
     }
@@ -72,8 +142,8 @@ our main services
     .services-slide {
       position: absolute;
       right: 0;
-      width: 280px;
-      min-height: 320px;
+      width: 350px;
+      min-height: 380px;
       border-radius: 10px;
       padding: 2rem;
       background-color: $white;
@@ -81,7 +151,7 @@ our main services
       transition: 300ms $bezier;
       direction: ltr;
       transform: translate(80px, 0);
-      z-index: 2;
+      z-index: 1;
 
       @media screen and (max-width: 480px) {
         width: 250px;
@@ -120,7 +190,7 @@ our main services
         z-index: 24;
 
         .services-slide {
-          transform: translate(0, -40px) !important;
+          transform: translate(0, -80px) !important;
           background-color: $dark;
           color: $white;
           z-index: 3;
@@ -134,7 +204,7 @@ our main services
           z-index: 20;
 
           .services-slide {
-            transform: translate(150px, 60px);
+            transform: translate(150px, 80px);
             opacity: 0.5;
             z-index: 1;
           }
@@ -144,7 +214,7 @@ our main services
 
     .slick-slide:not(.slick-active) .services-slide {
       opacity: 0;
-      visibility: hidden;
+      // visibility: hidden;
     }
 
     // @media screen and (max-width: 767px) {
@@ -168,25 +238,6 @@ our main services
   }
 }
 
-// .slides-container {
-//   @media screen and (max-width: 767px) {
-//     overflow-x: auto;
-//     padding-bottom: 2rem;
-
-//     &::-webkit-scrollbar {
-//       height: 8px;
-//     }
-     
-//     &::-webkit-scrollbar-track {
-//       box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-//     }
-     
-//     &::-webkit-scrollbar-thumb {
-//       background-color: $text;
-//     }
-//   }
-// }
-
 /* ================
 templates
 ================= */
@@ -204,6 +255,7 @@ templates
 
   .templates-subtitle {
     position: relative;
+    max-width: 500px;
     z-index: 2;
     font-size: 1.2rem;
     color: $white;
@@ -482,11 +534,53 @@ memberships
       }
     }
 
+    .card-ribbon {
+      position: absolute;
+      overflow: hidden;
+      top: -10px;
+      left: -10px;
+      width: 114px;
+      height: 112px;
+      span {
+          position: absolute;
+          display: block;
+          width: 160px;
+          padding: 10px 0;
+          background-color: $primary;
+          box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+          color: $white;
+          font-size: 13px;
+          text-transform: uppercase;
+          text-align: center;
+          left: -35px;
+          top: 25px;
+          transform: rotate(-45deg);
+      }
+      &::before,
+      &::after {
+          position: absolute;
+          z-index: -1;
+          content: '';
+          display: block;
+          border: 5px solid #2980b9;
+          border-top-color: transparent;
+          border-left-color: transparent;
+      }
+      &::before {
+          top: 0;
+          right: 0; 
+      }
+      &::after {
+          bottom: 0;
+          left: 0;
+      }
+    }
+
     &.best-seller {
       box-shadow: $shadow;
       border: none;
       transform: scale(1.5);
-
+      margin-top: -15px;
 
       .btn-start {
         background-color: $red;

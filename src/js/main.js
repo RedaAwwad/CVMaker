@@ -4,6 +4,7 @@ import {
   initTemplatesSlider,
   initTestimonialSlider,
   initTestimonialSliderNavigator,
+  initPartnersSlider,
 } from './functions/sliders';
 
 import "./functions/counter-animation";
@@ -69,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // testimonial slider navigrator
   if($('.testimonial-slider__navigrator').length) {
     initTestimonialSliderNavigator('.testimonial-slider__navigrator');
+  }
+
+  // init Partners Slider
+  if($('.partners__slider').length) {
+    initPartnersSlider('.partners__slider');
   }
 
 });
