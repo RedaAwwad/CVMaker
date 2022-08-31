@@ -32,11 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener("scroll", reveal);
 
 
-  // services slider
-  if($('.our-main-services__slides')) {
-    initServicesSlider('.our-main-services__slides');
-  }
-
   // templates slider
   if($('.templates-slider').length) {
     initTemplatesSlider('.templates-slider');

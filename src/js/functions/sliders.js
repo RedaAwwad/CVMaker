@@ -1,27 +1,3 @@
-// init services slider
-export const initServicesSlider = (element, interval = 3000) => {
-  $(element).slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: false,
-    infinite: true,
-    // focusOnSelect: true,
-    autoplay: true,
-    rtl: true,
-    // fade: true,
-    cssEase: 'linear',
-    responsive: [
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-    ]
-  });
-}
-
 // init Templates Slider
 export const initTemplatesSlider = (element) => {
   $(element).slick({

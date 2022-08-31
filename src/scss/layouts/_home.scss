@@ -67,6 +67,7 @@ partners
       object-position: center;
       border: 1px solid $border;
       border-radius: 5px;
+
     }
   }
 }
@@ -75,30 +76,21 @@ partners
 our main services
 ================= */
 .our-main-services {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   overflow: hidden;
   
-  @media screen and (max-width: 576px) {
-    padding-top: 3rem;
-  }
-
   &>.container-fluid {
     max-width: 1650px;
-    padding: 0;
 
-    @media screen and (max-width: 767px) {
-      padding-right: 1rem;
-      padding-left: 1rem;
+    @media screen and (max-width: 600px) {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
   &__content {
-    padding-bottom: 4rem;
-
-    @media screen and (max-width: 767px) {
-      padding-bottom: 2rem;
-    }
+    padding-bottom: 2rem;
 
     p {
       font-size: 1.2rem;
@@ -109,54 +101,20 @@ our main services
   &__slides {
     position: relative;
     min-height: 320px;
-    // display: flex;
-    // justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
-    .slick-list {
-      padding-top: 5rem;
-      padding-bottom: 6rem;
-      // overflow: initial !important;
-
-      .slick-track {
-        position: relative;
-
-        // &::after {
-        //   content: '';
-        //   position: absolute;
-        //   top: 0;
-        //   left: 0;
-        //   width: 100%;
-        //   height: 100%;
-        //   z-index: 19;
-        //   background-color: $white;
-        // }
-      }
-    }
-
-    .slick-slide {
-      min-height: 380px;
-      width: 100%;
-      position: relative;
-    }
-
-    .services-slide {
-      position: absolute;
-      right: 0;
+    .swiper-slide {
       width: 350px;
       min-height: 380px;
       border-radius: 10px;
-      padding: 2rem;
+      padding: 2rem 1rem;
       background-color: $white;
       box-shadow: $shadow;
-      transition: 300ms $bezier;
-      direction: ltr;
-      transform: translate(80px, 0);
-      z-index: 1;
-
-      @media screen and (max-width: 480px) {
-        width: 250px;
-        min-height: 300px;
-      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
 
       .icon {
         width: 6rem;
@@ -181,60 +139,16 @@ our main services
         margin-bottom: 0;
         font-size: 0.9rem;
       }
-    }
 
-    .slick-slide.slick-active {
-      z-index: 22;
+      &.swiper-slide-active {
+        background-color: $dark;
+        color: $white;
 
-      &.slick-current {
-        z-index: 24;
-
-        .services-slide {
-          transform: translate(0, -80px) !important;
-          background-color: $dark;
-          color: $white;
-          z-index: 3;
-  
-          p {
-            color: $text;
-          }
+        p {
+          color: $text;
         }
-
-        &+.slick-active+.slick-active {
-          z-index: 20;
-
-          .services-slide {
-            transform: translate(150px, 80px);
-            opacity: 0.5;
-            z-index: 1;
-          }
-        } 
       }
     }
-
-    .slick-slide:not(.slick-active) .services-slide {
-      opacity: 0;
-      // visibility: hidden;
-    }
-
-    // @media screen and (max-width: 767px) {
-    //   display: flex;
-    //   gap: 25px;
-    //   width: calc(3 * 300px);
-
-    //   .services-slide {
-    //     position: static;
-    //     transform: translate(0, 0) !important;
-    //     opacity: 1 !important;
-    //     background-color: $dark;
-    //     color: $white;
-    //     z-index: 3;
-
-    //     p {
-    //       color: $text;
-    //     }
-    //   }
-    // }
   }
 }
 

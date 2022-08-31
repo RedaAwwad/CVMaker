@@ -19,8 +19,11 @@
         <meta property="og:site_name" content="SITE NAME" />
         
         <link rel="stylesheet" href="css/vendor/vendor.bundle.css">
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
         <link rel="stylesheet" href="css/main.min.css">
-    
     </head>
     <body>
 
@@ -233,11 +236,11 @@
                 <!-- services -->
                 <section id="servicesSection" class="our-main-services">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div dir="rtl" class="col-12 col-md-6 order-2 order-md-1 slides-container">
-                                <div class="our-main-services__slides">
-                                    <div>
-                                        <div class="services-slide">
+                        <div class="row mx-0">
+                            <div class="col-12 col-lg-7 order-2 order-lg-1 slides-container px-0 px-md-3">
+                                <div class="swiper our-main-services__slides">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
                                             <div class="icon">
                                                 <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                             </div>
@@ -248,9 +251,7 @@
                                                 adicing elit maecenas sa faubus
                                                 mollis interdum</p>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="services-slide">
+                                        <div class="swiper-slide">
                                             <div class="icon">
                                                 <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                             </div>
@@ -259,9 +260,7 @@
                                                 adicing elit maecenas sa faubus
                                                 mollis interdum</p>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="services-slide">
+                                        <div class="swiper-slide">
                                             <div class="icon">
                                                 <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                             </div>
@@ -270,9 +269,7 @@
                                                 adicing elit maecenas sa faubus
                                                 mollis interdum</p>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="services-slide">
+                                        <div class="swiper-slide">
                                             <div class="icon">
                                                 <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                             </div>
@@ -284,7 +281,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 order-1 order-md-2 our-main-services__content bg-white">
+                            <div class="col-12 col-lg-5 order-1 order-lg-2 our-main-services__content bg-white">
                                 <div class="mb-4">
                                     <h2 class="section__title"> 
                                         Services
@@ -302,7 +299,7 @@
                                         Link Building minutes, with readability optimized templates to choose from.</p>
         
                                     <div>
-                                        <a href="/" class="btn btn-primary-outline d-inline-flex align-items-center">
+                                        <a href="/" class="btn btn-primary d-inline-flex align-items-center">
                                             <span>Create Resume</span>
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -1017,6 +1014,9 @@
         </footer> <!-- footer -->
 
         <script src="./js/vendor/vendor.bundle.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
         <script src="./js/main.bundle.js"></script>
 
         <script>
@@ -1029,6 +1029,44 @@
                     $('.resume-btn').addClass('show');
                 } else {
                     $('.resume-btn').removeClass('show');
+                }
+            });
+
+            // swiper
+            new Swiper(".our-main-services__slides", {
+                effect: "coverflow",
+                spaceBetween: 0,
+                loop: true,
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 1,
+                coverflowEffect: {
+                    rotate: 30,
+                    stretch: 0,
+                    depth: 50,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    40: {
+                        slidesPerView: 1.5,
+                    },
+                    500: {
+                        slidesPerView: 2,
+                    },
+                    600: {
+                        slidesPerView: 3,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    1100: {
+                        slidesPerView: 3,
+                    },
                 }
             });
         });
