@@ -5,6 +5,15 @@
     font-family: 'Tajawal Bold', Arial, Helvetica, sans-serif;
   }
 
+  &-section {
+    border: 0;
+    box-shadow: $shadow;
+
+    .text {
+      line-height: 2;
+    }
+  }
+
   &.resume-card {
     // border: 0;
     transition: 300ms ease;

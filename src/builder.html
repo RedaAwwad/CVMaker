@@ -141,10 +141,13 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Resumes</li>
+            <li class="breadcrumb-item"><a href="/resumes.html">Resumes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Resume Name
+            </li>
           </ol>
         </nav>
-        <h1 class="text-center">Choose a template for your ResumeCv</h1>
+        <h1 class="text-center">Template Preview</h1>
       </div>
     </section>
 
@@ -152,235 +155,36 @@
         <div class="overflow-hidden">
           <section class="resumes__content">
             <div class="container">
-              <!-- IMPORTANT NOTE: for ANIMATION -->
-              <!-- The first 4 columns should contain 'slide-up' class -->
-              <!-- and the rest columns should contain 'reveal' class instead -->
-              <div class="row mb-4">
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price free">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Free</span>
-                        </div>
+              <div class="row">
+                <div class="col-xl-10 mx-auto">
+                  <div class="row mb-4">
+                    <div class="col-md-7 col-lg-8 d-flex justify-content-center mb-4 mb-md-0">
+                      <div class="template-preview">
+                        <img src="assets/imgs/cv.jpg" alt="">
                       </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                      <div class="card card-section px-3 py-4 mb-5">
+                        <p class="text mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem accusantium quae dolores cum pariatur architecto. Reiciendis quidem, at pariatur natus ducimus repellendus porro. Neque dolorum commodi sunt, perferendis impedit sed?</p>
+                        <a href="/login.html" class="btn btn-block btn-primary text-uppercase">
+                          Try this template
+                        </a>
+                      </div>
+                      <div class="card card-section px-3 py-4">
+                        <h4 class="mb-0">Subscribe</h4>
+                        <hr>
+                        <form action="">
+                          <div class="form-group pt-4 pb-2">
+                            <input type="email" class="form-control" placeholder="Your Email" name="email">
+                          </div>
+                          <button class="btn btn-block btn-primary btn-rounded text-uppercase" type="submit">
+                            Subscribe
+                          </button>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price premium">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Premium</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price free">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Free</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price premium">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Premium</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price free">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Free</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price premium">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Premium</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price premium">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Premium</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <div class="mb-4">
-                        <div class="resume-card__price free">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                            </svg>
-                          </span>
-                          <span>Free</span>
-                        </div>
-                      </div>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center">
-                <nav aria-label="Page navigation" class="reveal">
-                  <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="15 6 9 12 15 18" />
-                        </svg>
-                      </a></li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 6 15 12 9 18" />
-                        </svg>
-                      </a></li>
-                  </ul>
-                </nav>
               </div>
             </div>
           </section>

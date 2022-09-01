@@ -20,9 +20,6 @@
         
         <link rel="stylesheet" href="css/vendor/vendor.bundle.css">
 
-        <!-- swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
@@ -77,7 +74,7 @@
                                     <a class="nav-link" href="#">Contacts</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/login.html">Login</a>
+                                    <button data-toggle="modal" data-target="#login" class="nav-link btn">Login</button>
                                 </li>
                             </ul>
                             </div>
@@ -235,54 +232,47 @@
 
                 <!-- services -->
                 <section id="servicesSection" class="our-main-services">
-                    <div class="container-fluid">
-                        <div class="row mx-0">
-                            <div class="col-12 col-lg-7 order-2 order-lg-1 slides-container px-0 px-md-3">
-                                <div class="swiper our-main-services__slides">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="icon">
-                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                            </div>
-                                            <h3>Link Building
-                                                & Content
-                                            </h3>
-                                            <p>Lorem ipsum dolor sit amet
-                                                adicing elit maecenas sa faubus
-                                                mollis interdum</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-2 order-md-1 slides-container">
+                                <div class="our-main-services__slides">
+                                    <div class="services-slide active">
+                                        <div class="icon">
+                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="icon">
-                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                            </div>
-                                            <h3>Lorem ipsum dolor</h3>
-                                            <p>Lorem ipsum dolor sit amet
-                                                adicing elit maecenas sa faubus
-                                                mollis interdum</p>
+                                        <h3>Link Building
+                                            & Content
+                                        </h3>
+                                        <p>Lorem ipsum dolor sit amet
+                                            adicing elit maecenas sa faubus
+                                            mollis interdum</p>
+                                    </div>
+                                    <div class="services-slide">
+                                        <div class="icon">
+                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="icon">
-                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                            </div>
-                                            <h3>Elit maecenas sa faubus</h3>
-                                            <p>Lorem ipsum dolor sit amet
-                                                adicing elit maecenas sa faubus
-                                                mollis interdum</p>
+                                        <h3>Link Building
+                                            & Content
+                                        </h3>
+                                        <p>Lorem ipsum dolor sit amet
+                                            adicing elit maecenas sa faubus
+                                            mollis interdum</p>
+                                    </div>
+                                    <div class="services-slide last">
+                                        <div class="icon">
+                                            <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="icon">
-                                                <img class="mw-100" src="assets/imgs/list.svg" alt="list icon">
-                                            </div>
-                                            <h3>Faubus mollis interdum </h3>
-                                            <p>Lorem ipsum dolor sit amet
-                                                adicing elit maecenas sa faubus
-                                                mollis interdum</p>
-                                        </div>
+                                        <h3>Link Building
+                                            & Content
+                                        </h3>
+                                        <p>Lorem ipsum dolor sit amet
+                                            adicing elit maecenas sa faubus
+                                            mollis interdum</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-5 order-1 order-lg-2 our-main-services__content bg-white">
-                                <div class="mb-4">
+                            <div class="col-12 col-md-6 order-1 order-md-2 our-main-services__content">
+                                <div class="mb-4 pt-5">
                                     <h2 class="section__title"> 
                                         Services
                                         <div class="section__title--padding">
@@ -291,13 +281,9 @@
                                             <span></span>
                                         </div>
                                     </h2>
-                                    <p>We want to simplify resume creation for job seekers globally.
-                                        Our goal is to help you land your next job as quickly as
-                                        possible.</p>
-                                    <p>Instead of manuaully creating resumes in Word or Pages, you
+                                    <p>We want to simplify resume creation for job seekers globally. Instead of manuaully creating resumes in Word or Pages, you
                                         can use SimpleCV and create your resume in a matter of
                                         Link Building minutes, with readability optimized templates to choose from.</p>
-        
                                     <div>
                                         <a href="/" class="btn btn-primary d-inline-flex align-items-center">
                                             <span>Create Resume</span>
@@ -306,7 +292,7 @@
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                     <polyline points="7 7 12 12 7 17" />
                                                     <polyline points="13 7 18 12 13 17" />
-                                                </svg>
+                                                  </svg>
                                             </span>
                                         </a>
                                     </div>
@@ -315,6 +301,7 @@
                         </div>
                     </div>
                 </section><!-- services -->
+                <!-- services -->
 
                 <!-- templates -->
                 <section class="templates overflow-hidden">
@@ -957,7 +944,7 @@
                                 <a class="nav-link" href="#">Contacts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/login.html">Login</a>
+                                <button data-toggle="modal" data-target="#login" class="nav-link btn">Login</button>
                             </li>
                         </ul>
                         <form action="POST">
@@ -1013,6 +1000,74 @@
             </div>
         </footer> <!-- footer -->
 
+        <!-- login modal -->
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <form class="modal-content rating">
+                <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body pt-4">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" name="email"
+                        required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" name="password" required>
+                    </div>
+                    <p class="mb-0">
+                        New Here? <a class="btn p-0" data-dismiss="modal" data-toggle="modal" href="#register">Create an Account</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary py-2 px-4 text-uppercase" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary btn-sm text-uppercase">
+                        Login
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+        
+        <!-- register modal -->
+        <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <form class="modal-content rating">
+                <div class="modal-header">
+                <h5 class="modal-title">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body pt-4">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" name="email"
+                        required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" name="password" required>
+                    </div>
+                    <p class="mb-0">
+                        Have an account? <a class="btn p-0" data-dismiss="modal" data-toggle="modal" href="#login">Login</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary py-2 px-4 text-uppercase" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary btn-sm text-uppercase">
+                        Register
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+
         <script src="./js/vendor/vendor.bundle.js"></script>
         <!-- swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -1029,44 +1084,6 @@
                     $('.resume-btn').addClass('show');
                 } else {
                     $('.resume-btn').removeClass('show');
-                }
-            });
-
-            // swiper
-            new Swiper(".our-main-services__slides", {
-                effect: "coverflow",
-                spaceBetween: 0,
-                loop: true,
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 1,
-                coverflowEffect: {
-                    rotate: 30,
-                    stretch: 0,
-                    depth: 50,
-                    modifier: 1,
-                    slideShadows: false,
-                },
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                breakpoints: {
-                    40: {
-                        slidesPerView: 1.5,
-                    },
-                    500: {
-                        slidesPerView: 2,
-                    },
-                    600: {
-                        slidesPerView: 3,
-                    },
-                    992: {
-                        slidesPerView: 2,
-                    },
-                    1100: {
-                        slidesPerView: 3,
-                    },
                 }
             });
         });
