@@ -796,3 +796,27 @@ stats
   }
 }
 
+/* ================
+Latest Posts
+================= */
+.latest-posts {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__container {
+    @media screen and (max-width: 767px) {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+
+      .row {
+        width: calc(320px * 3);
+
+        &>div {
+          width: 320px;
+          flex: 0 0 320px;
+          max-width: 320px;
+        }
+      }
+    }
+  }
+}
