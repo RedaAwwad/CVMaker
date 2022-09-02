@@ -820,3 +820,70 @@ Latest Posts
     }
   }
 }
+
+/* ================
+main features
+================= */
+.main-features {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $bg;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__container {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+
+      .row {
+        width: calc(320px * 6);
+
+        &>div {
+          width: 320px;
+          flex: 0 0 320px;
+          max-width: 320px;
+        }
+      }
+    }
+  }
+
+  .card-feature {
+    border: 0;
+    box-shadow: $shadow;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    &__icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      background-color: #fbeaea;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: $secondary;
+    }
+
+    &__text {
+      line-height: 1.8;
+      font-size: 0.9rem;
+    }
+  }
+}

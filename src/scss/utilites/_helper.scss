@@ -57,6 +57,12 @@
       }
     }
   }
+
+  &__text {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .text-primary {
