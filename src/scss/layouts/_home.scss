@@ -485,6 +485,24 @@ memberships
     width: 100%;
   }
 
+  &__tabs {
+    border: 1px solid $primary;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+    .nav-link {
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      color: $secondary;
+
+      &.active {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+
   @media screen and (max-width: 767px) {
     &__card {
       width: 350px;
