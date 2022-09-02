@@ -66,6 +66,9 @@
         box-shadow: $shadow;
         transform: scale(1.02);
       }
+      .card-title {
+        color: $primary;
+      }
     }
 
     .card-img {
@@ -82,7 +85,7 @@
 
     .card-title {
       font-size: 1.5rem;
-      color: $dark;
+      color: $secondary;
     }
 
     .card-date {

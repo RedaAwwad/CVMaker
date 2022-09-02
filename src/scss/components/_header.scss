@@ -7,13 +7,13 @@
   &__inner {
     min-height: 1px;
     height: 85px;
-    background-color: $dark;
+    background-color: $white;
 
     .navbar-brand.inner {
       position: relative;
       z-index: 5;
       transform: translateY(-40px);
-      color: $white;
+      // color: $white;
     }
 
   }
@@ -25,7 +25,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(1, 2, 29, 0.75);
+    background-color: rgba(255,255,255,.25);
+    // background-color: rgba(1, 2, 29, 0.75);
     z-index: 2;
   }
 
@@ -55,6 +56,10 @@
       clip-path: ellipse(50% 50% at 50% 50%);
       box-shadow: $shadow;
     }
+
+    .navbar-brand {
+      color: $secondary;
+    }
     
     .btn-menu {
       position: fixed;
@@ -68,12 +73,12 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: #163651;
-      color: #92a5c3;
+      background-color: $primary;
+      color: $white;
+      transition: transform 300ms ease;
 
       &:hover {
-        background-color: $primary;
-        color: $white;
+        transform: translateX(-50%) scale(0.95);
       }
     }
 
@@ -122,7 +127,8 @@
         transform: translateX(-50%);
         width: 125%;
         height: 120%;
-        background-color: #091f30;
+        background-color: $gray;
+        // background-color: #091f30;
         clip-path: ellipse(50% 50% at 50% 50%);
 
         @media screen and (max-width: 767px) {
@@ -148,11 +154,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: #a3b1bc;
-          transition: background 300ms $bezier;
+          background-color: $secondary;
+          transition: 300ms $bezier;
+          color: $white;
 
           &:hover {
-            background-color: #472ab2;
+            opacity: 0.9;
+            transform: scale(0.95);
           }
         }
       }
@@ -180,7 +188,8 @@
         h4 {
           margin-bottom: 1.5rem;
           font-size: 1.3rem;
-          color: $white;
+          color: $secondary;
+          // color: $white;
         }
 
         .btn {
@@ -218,7 +227,8 @@
 
     .nav-link {
       padding: 0.4rem 0.8rem;
-      color: $white !important;
+      color: $secondary !important;
+      // color: $white !important;
 
       &:hover {
         color: $primary !important;
@@ -311,12 +321,13 @@
         margin-left: auto;
         line-height: 1.5;
         margin-bottom: 1rem;
-        font-family: 'Open Sans Light', sans-serif;
+        // font-family: 'Open Sans Light', sans-serif;
+        color: $secondary;
 
         span {
           display: inline-block;
           font-size: 3rem;
-          font-family: 'Open Sans', sans-serif;
+          font-family: 'Open Sans Bold', sans-serif;
           color: $primary;
         }
 
@@ -328,9 +339,12 @@
       }
 
       p {
+        padding: 0.5rem;
         font-size: 1.5rem;
+        line-height: 1.8;
         font-family: 'Open Sans Light', sans-serif;
-        color: $text;
+        background-color:rgba(9, 19, 48, 0.1);
+        color: $white;
       }
     }
   }

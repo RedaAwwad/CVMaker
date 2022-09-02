@@ -22,6 +22,7 @@
     color: $white !important;
     border: none !important;
     transition: transform .3s $bezier;
+    border-radius: 40px;
 
     &:hover {
       box-shadow: 0px 8px 20px rgba(14, 49, 81, 0.08);

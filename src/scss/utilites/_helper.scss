@@ -23,7 +23,7 @@
     position: relative;
     margin-bottom: 1.75rem;
     font-size: 2.5rem;
-    color: $dark;
+    color: $secondary;
     
     &--padding {
       position: absolute;
@@ -34,7 +34,7 @@
         display: inline-block;
         height: 4px;
         border-radius: 5px;
-        background-color: $blue;
+        background-color: $primary;
 
         &:first-child {
           width: 60px;
@@ -81,7 +81,7 @@
   // position: absolute;
   border-radius: 15px;
   margin-bottom: 30px;
-  background-color: #0b2f52;
+  background-color: rgba(15, 53, 142, 0.157);
 
   &:first-child {
     height: 5px;
@@ -123,12 +123,12 @@
   background-color: $bg;
   
   h1 {
-    color: $accent;
+    color: $secondary;
   }
 
   @media screen and (max-width: 576px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }

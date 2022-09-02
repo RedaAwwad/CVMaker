@@ -9,15 +9,28 @@
   z-index: 60;
   width: 60px;
   height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
-  background-color: $red;
   box-shadow: $shadow;
   opacity: 0;
   visibility: hidden;
-  transition: 300ms $bezier;
+  transition: 300ms ease;
+  cursor: pointer;
+
+  &__content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem 0.3rem 65px;
+    border-radius: 40px;
+    // transform: translateX(-15px);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+
+    background-color: $primary;
+    color: $white;
+    transition: 300ms ease;
+  }
 
   &.show {
     opacity: 1;
@@ -25,11 +38,29 @@
   }
 
   &:hover {
-    opacity: 0.9;
-    transform: scale(0.92);
+    width: 250px;
+    // transform: scale(0.92);
+    // width: ;
+    .resume-btn__content {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
-  a {
+  .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    background-color: $primary;
     color: $white;
 
     &:hover {
@@ -76,11 +107,12 @@ partners
 our main services
 ================= */
 .our-main-services {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
   
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 767px) {
     padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 
   &>.container {
@@ -207,7 +239,8 @@ templates
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-bottom: 4rem;
-  background-color: $dark;
+  // background-color: $gray;
+  background-color: #fafafa;
 
   .section__title {
     position: relative;
@@ -215,12 +248,16 @@ templates
     color: $primary;
   }
 
+  .section__title--padding span {
+    background-color: $secondary;
+  }
+
   .templates-subtitle {
     position: relative;
     max-width: 500px;
     z-index: 2;
     font-size: 1.2rem;
-    color: $white;
+    color: $secondary;
   }
 
   &__shape {
@@ -231,6 +268,11 @@ templates
   }
 
   &-slider {
+    .slick-list {
+      padding: 1rem 0.2rem;
+    }
+
+
     &__container {
       position: relative;
 
@@ -288,6 +330,12 @@ templates
     .slick-slide {
       transition: 300ms $bezier;
 
+      &.slick-active.slick-current {
+        .templates-slider__slide {
+          box-shadow: $shadow;
+        }
+      }
+
       &.slick-active:not(.slick-current) {
         
         .templates-slider__slide {
@@ -329,7 +377,9 @@ templates
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: $primary;
+        border-top: 1px solid $border;
+        background-color: $white;
+        color: #ffd609;
         z-index: 2;
   
         .btn {
@@ -346,8 +396,9 @@ templates
           font-size: 0.8rem;
           font-weight: 600;
           text-transform: uppercase;
-          background-color: #a6dcf2;
-          color: #11044c;
+          background-color: $secondary;
+          color: $white;
+          text-align: center;
         }
       }
     }
@@ -370,7 +421,7 @@ steps
       gap: 1.5rem;
 
       .title {
-        color: $primary;
+        color: $secondary;
         font-size: 1.3rem;
       }
 
@@ -387,9 +438,10 @@ steps
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      background: rgb(52,72,127);
-      background: linear-gradient(41deg, rgba(52,72,127,1) 0%, rgba(47,114,169,1) 100%);
+      background-color: $secondary;
+      background: linear-gradient(41deg, rgba(52,72,127,1) 0%, $secondary 100%);
       color: $white;
+      text-shadow: 2px 5px 10px rgba(255, 255, 255, 0.3);
       font-size: 2rem;
       font-family: $sans-bold;
 
@@ -401,8 +453,7 @@ steps
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: rgb(52,72,127);
-        background: linear-gradient(41deg, rgba(52,72,127,1) 0%, rgba(47,114,169,1) 100%);
+        background-color: $primary;
       }
     }
   }
@@ -524,7 +575,7 @@ memberships
           z-index: -1;
           content: '';
           display: block;
-          border: 5px solid #2980b9;
+          border: 5px solid #991825;
           border-top-color: transparent;
           border-left-color: transparent;
       }
@@ -545,7 +596,7 @@ memberships
       margin-top: -15px;
 
       .btn-start {
-        background-color: $red;
+        background-color: $primary;
       }
     }
 
@@ -578,7 +629,7 @@ testimonial
 .testimonial {
   padding-top: 4rem;
   padding-bottom: 5rem;
-  background-color: $dark;
+  background-color: $secondary;
 
   &-subtitle {
     max-width: 900px;
@@ -695,7 +746,7 @@ stats
 
   .section__title,
   p {
-    color: $accent;
+    color: $secondary;
 
     span {
       color: $primary;
@@ -724,11 +775,7 @@ stats
 
     &:nth-child(2) {
       transform: translateX(35px);
-      color: #11044c;
-    }
-
-    &:first-child h4 {
-      color: $text;
+      color: $secondary;
     }
 
     h4 {
@@ -739,15 +786,9 @@ stats
     }
 
     span {
-      color: $primary;
       font-size: 1.8rem;
       letter-spacing: 1px;
       font-weight: 300;
-    }
-
-    &:last-child,
-    &:last-child span {
-      color: $white;
     }
 
     &.primary {
@@ -755,7 +796,7 @@ stats
     }
 
     &.dark {
-      background-color: $accent;
+      background-color: $secondary;
     }
   }
 
