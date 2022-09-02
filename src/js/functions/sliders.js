@@ -81,3 +81,36 @@ export const initPartnersSlider = (element) => {
     ]
   });
 }
+
+// Memberships Slider
+export const initMembershipsSlider = (element) => {
+  $(element).slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      // {
+      //   breakpoint: 576,
+      //   settings: {
+      //     slidesToShow: 2,
+      //   }
+      // },
+    ]
+  });
+}

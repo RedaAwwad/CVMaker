@@ -1,10 +1,10 @@
 import { reveal } from './functions/animation';
 import {
-  initServicesSlider,
   initTemplatesSlider,
   initTestimonialSlider,
   initTestimonialSliderNavigator,
   initPartnersSlider,
+  initMembershipsSlider,
 } from './functions/sliders';
 
 import "./functions/counter-animation";
@@ -70,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // init Partners Slider
   if($('.partners__slider').length) {
     initPartnersSlider('.partners__slider');
+  }
+
+  // memberships slider
+  if($('.memberships__slider').length) {
+    initMembershipsSlider('.memberships__slider');
   }
 
 });

@@ -37,14 +37,16 @@
     visibility: visible;
   }
 
-  &:hover {
-    width: 250px;
-    // transform: scale(0.92);
-    // width: ;
-    .resume-btn__content {
-      transform: translateX(0);
-      opacity: 1;
-      visibility: visible;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      width: 250px;
+      // transform: scale(0.92);
+      // width: ;
+      .resume-btn__content {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
@@ -464,31 +466,26 @@ memberships
 ================= */
 .memberships {
 
+  &__slider {
+    .slick-list {
+      margin: 0 -10px;
+    }
+    
+    .slick-slide>div {
+      padding: 2rem 1rem;
+      
+      &>div {
+        display: flex !important;
+        justify-content: center;
+      }
+    }
+  }
+
   &__card {
     width: 100%;
   }
 
   @media screen and (max-width: 767px) {
-    &-cards__container {
-      overflow-x: auto;
-      &::-webkit-scrollbar {
-        height: 10px;
-      }
-       
-      &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      }
-       
-      &::-webkit-scrollbar-thumb {
-        background-color: $text;
-      }
-      // width: calc(( 3 * 500px));
-
-      &>.row {
-        width: calc(( 3 * 350px) + 20px);
-      }
-    }
-    
     &__card {
       width: 350px;
       padding: 3rem 2rem;
@@ -496,6 +493,11 @@ memberships
   }
 
   @media screen and (max-width: 480px) {
+    &.section-padding {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
     &-cards__container>.row {
       width: calc(( 3 * 300px) + 20px);
     }
@@ -547,53 +549,11 @@ memberships
       }
     }
 
-    .card-ribbon {
-      position: absolute;
-      overflow: hidden;
-      top: -10px;
-      left: -10px;
-      width: 114px;
-      height: 112px;
-      span {
-          position: absolute;
-          display: block;
-          width: 160px;
-          padding: 10px 0;
-          background-color: $primary;
-          box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-          color: $white;
-          font-size: 13px;
-          text-transform: uppercase;
-          text-align: center;
-          left: -35px;
-          top: 25px;
-          transform: rotate(-45deg);
-      }
-      &::before,
-      &::after {
-          position: absolute;
-          z-index: -1;
-          content: '';
-          display: block;
-          border: 5px solid #991825;
-          border-top-color: transparent;
-          border-left-color: transparent;
-      }
-      &::before {
-          top: 0;
-          right: 0; 
-      }
-      &::after {
-          bottom: 0;
-          left: 0;
-      }
-    }
-
     &.best-seller {
       box-shadow: $shadow;
       border: none;
-      transform: scale(1.5);
-      margin-top: -15px;
+      transform: scale(1.3);
+      margin-top: -10px;
 
       .btn-start {
         background-color: $primary;
