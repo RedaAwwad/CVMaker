@@ -424,6 +424,155 @@
         </div>
     </footer> <!-- footer -->
 
+    <!-- login modal -->
+    <div class="modal fade auth-modal" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-body pt-4">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 col-xl-7 d-none d-lg-block">
+                              <img width="800" class="mw-100" src="assets/imgs/vector.jpg" alt="vector">
+                          </div>
+                          <div class="col-lg-6 col-xl-5 px-md-3">
+                              <div class="auth-form mx-auto">
+                                  <h2 class="mb-4">Sign in</h2>
+                                  <p class="color-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint repudiandae vel quia necessitatibus impedit.</p>
+                                  <form action="" class="mb-3">
+                                      <div class="form-group">
+                                          <input type="email" required class="form-control" name="email"
+                                          placeholder="Your Email">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="password" required class="form-control" name="password"
+                                          placeholder="Your Password">
+                                      </div>
+
+                                      <div class="d-flex align-items-center justify-content-between mb-3">
+                                          <label class="d-flex align-items-center gap mb-0">
+                                              <input type="checkbox" name="remeber">
+                                              <span class="text-sm">Remember Me</span>
+                                          </label>
+                                          <a href="#" class="btn p-0 btn-link text-sm">
+                                              Forgot Password
+                                          </a>
+                                      </div>
+
+                                      <button type="submit" class="btn btn-primary btn-sm btn-block text-uppercase">
+                                          Login
+                                      </button>
+                                  </form>
+                                  <p class="text-sm">
+                                      New Here? <a class="btn py-0 btn-link text-sm" data-dismiss="modal" data-toggle="modal" href="#register">Create an Account</a>
+                                  </p>
+                                  <p class="login-with"> -- or login with -- </p>
+                                  <ul class="socials-auth d-flex align-items-center gap">
+                                      <li>
+                                          <a class="socials-auth--btn facebook"  href="#" target="_blank">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" viewBox="0 0 10.798 19.401">
+                                                  <path d="M10.392,0,7.8,0a4.482,4.482,0,0,0-4.79,4.775v2.2H.407a.4.4,0,0,0-.407.4v3.19a.4.4,0,0,0,.407.4h2.6v8.048a.4.4,0,0,0,.407.4h3.4a.4.4,0,0,0,.407-.4V10.957h3.045a.4.4,0,0,0,.407-.4V7.372a.391.391,0,0,0-.119-.28.413.413,0,0,0-.288-.116H7.224V5.11c0-.9.22-1.352,1.423-1.352h1.745a.4.4,0,0,0,.407-.4V.4A.4.4,0,0,0,10.392,0Z" transform="translate(0)" fill="currentColor"/>
+                                              </svg>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a class="socials-auth--btn twitter"  href="#" target="_blank">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 22 18">
+                                                  <path d="M22,2.131a8.958,8.958,0,0,1-2.593.715A4.551,4.551,0,0,0,21.392.332a9,9,0,0,1-2.866,1.1,4.51,4.51,0,0,0-7.809,3.11,4.566,4.566,0,0,0,.117,1.036A12.784,12.784,0,0,1,1.531.831,4.569,4.569,0,0,0,2.928,6.9,4.459,4.459,0,0,1,.884,6.329c0,.019,0,.039,0,.058A4.539,4.539,0,0,0,4.5,10.842a4.5,4.5,0,0,1-2.038.079,4.522,4.522,0,0,0,4.216,3.156,9.017,9.017,0,0,1-5.606,1.945A9.028,9.028,0,0,1,0,15.958,12.7,12.7,0,0,0,6.918,18,12.8,12.8,0,0,0,19.761,5.07c0-.2,0-.393-.013-.588A9.188,9.188,0,0,0,22,2.131Z" fill="currentColor"/>
+                                              </svg>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a class="socials-auth--btn google" href="#" target="_blank">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                              <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8" />
+                                              </svg>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- register modal -->
+  <div class="modal fade auth-modal" id="register" tabindex="-1" aria-labelledby="login" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-body pt-4">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 col-xl-7 d-none d-lg-block">
+                              <img width="800" class="mw-100" src="assets/imgs/vector.jpg" alt="vector">
+                          </div>
+                          <div class="col-lg-6 col-xl-5 px-md-3">
+                              <div class="auth-form mx-auto">
+                                  <h2 class="mb-4">Register</h2>
+                                  <p class="color-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint repudiandae vel quia necessitatibus impedit.</p>
+                                  <form action="" class="mb-3">
+                                      <div class="form-group">
+                                          <input type="email" required class="form-control" name="email"
+                                          placeholder="Your Email">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="password" required class="form-control" name="password"
+                                          placeholder="Your Password">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="password" required class="form-control" name="confirm_password"
+                                          placeholder="Confirm Your Password">
+                                      </div>
+
+                                      <button type="submit" class="btn btn-primary btn-sm btn-block text-uppercase">
+                                          Register
+                                      </button>
+                                  </form>
+                                  <p class="text-sm">
+                                      Have an account? <a class="btn py-0 btn-link text-sm" data-dismiss="modal" data-toggle="modal" href="#login">Sign in</a>
+                                  </p>
+                                  <p class="login-with"> -- or register with -- </p>
+                                  <ul class="socials-auth d-flex align-items-center gap">
+                                      <li>
+                                          <a class="socials-auth--btn facebook"  href="#" target="_blank">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" viewBox="0 0 10.798 19.401">
+                                                  <path d="M10.392,0,7.8,0a4.482,4.482,0,0,0-4.79,4.775v2.2H.407a.4.4,0,0,0-.407.4v3.19a.4.4,0,0,0,.407.4h2.6v8.048a.4.4,0,0,0,.407.4h3.4a.4.4,0,0,0,.407-.4V10.957h3.045a.4.4,0,0,0,.407-.4V7.372a.391.391,0,0,0-.119-.28.413.413,0,0,0-.288-.116H7.224V5.11c0-.9.22-1.352,1.423-1.352h1.745a.4.4,0,0,0,.407-.4V.4A.4.4,0,0,0,10.392,0Z" transform="translate(0)" fill="currentColor"/>
+                                              </svg>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a class="socials-auth--btn twitter"  href="#" target="_blank">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 22 18">
+                                                  <path d="M22,2.131a8.958,8.958,0,0,1-2.593.715A4.551,4.551,0,0,0,21.392.332a9,9,0,0,1-2.866,1.1,4.51,4.51,0,0,0-7.809,3.11,4.566,4.566,0,0,0,.117,1.036A12.784,12.784,0,0,1,1.531.831,4.569,4.569,0,0,0,2.928,6.9,4.459,4.459,0,0,1,.884,6.329c0,.019,0,.039,0,.058A4.539,4.539,0,0,0,4.5,10.842a4.5,4.5,0,0,1-2.038.079,4.522,4.522,0,0,0,4.216,3.156,9.017,9.017,0,0,1-5.606,1.945A9.028,9.028,0,0,1,0,15.958,12.7,12.7,0,0,0,6.918,18,12.8,12.8,0,0,0,19.761,5.07c0-.2,0-.393-.013-.588A9.188,9.188,0,0,0,22,2.131Z" fill="currentColor"/>
+                                              </svg>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a class="socials-auth--btn google" href="#" target="_blank">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                              <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8" />
+                                              </svg>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
     <script src="./js/vendor/vendor.bundle.js"></script>
     <script src="./js/main.bundle.js"></script>
   </body>

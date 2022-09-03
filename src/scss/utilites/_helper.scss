@@ -257,3 +257,19 @@
     visibility: visible;
   }
 }
+
+.color-text {
+  color: $text;
+}
+
+.text-sm {
+  font-size: 0.85rem;
+}
+
+.btn-link {
+  color: $secondary;
+
+  &:hover {
+    color: $primary;
+  }
+}
