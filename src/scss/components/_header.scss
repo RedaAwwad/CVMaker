@@ -106,10 +106,18 @@
           height: 90vh;
           padding-bottom: 2rem;
         }
+
+        .nav-link {
+          color: $secondary;
+
+          &:hover {
+            color: $primary;
+          }
+        }
       }
 
       @media screen and (max-width: 480px) {
-        height: 90vh;
+        height: 85vh;
         padding: 1.5rem 0;
 
         .container {
@@ -172,8 +180,11 @@
         transform: translateX(-50%);
       }
 
-      .nav-link {
-        font-size: 1.3rem;
+      .nav-link,
+      .nav-link.btn {
+        font-size: 1.3rem !important;
+        padding-right: 0;
+        padding-left: 0;
       }
 
       .menu-links {
@@ -190,11 +201,6 @@
           font-size: 1.3rem;
           color: $secondary;
           // color: $white;
-        }
-
-        .btn {
-          padding: 0.8rem 1rem!important;
-          font-size: 0.9rem;
         }
       }
     }
@@ -238,60 +244,6 @@
     &-brand {
       margin-right: 0;
       margin-left: 1rem;
-    }
-
-    // menu on small screens
-    &-collapse {
-      @media screen and (max-width: 991px) {
-        display: block !important;
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 400px;
-        height: 100vh;
-        padding: 90px 25px 25px;
-        background: #fff;
-        transition: visible .2s ease-in-out,opacity .2s ease-in-out,right .2s ease-in-out;
-        box-shadow: 3px 5px 36px rgba(0, 0, 0,0.03);
-
-        &.active {
-          visibility: visible;
-          opacity: 1;
-        }
-
-        .nav-link {
-          padding: 0.8rem 0.8rem;
-          font-size: 1.8rem;
-          color: $primary !important;
-
-          &:hover {
-            color: $primary !important;
-          }
-
-          
-        }
-
-        .nav-item.active .nav-link {
-          color: $white !important;
-          background-color: $primary;
-          border-radius: 10px;
-        }
-
-        .socials-sm {
-          padding: 2rem 1rem 1rem;
-
-          svg {
-            width: 2rem;
-            height: 2rem;
-          }
-        }
-      }
     }
   }
 

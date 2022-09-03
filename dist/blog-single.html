@@ -46,7 +46,7 @@
             </div>
             <div id="headerMenu" class="header__menu-content">
                 <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-dark px-3 px-sm-0">
+                    <nav class="navbar navbar-expand-md navbar-dark px-3 px-sm-0">
                         <a class="navbar-brand" href="/">
                             <span>LOGO</span>
                         </a>
@@ -63,14 +63,14 @@
                                 <a class="nav-link" href="#">Contacts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/login.html">Login</a>
+                                <a data-toggle="modal" href="#login" class="nav-link">Login</a>
                             </li>
                           </ul>
                         </div>
                     </nav>
                     <div class="row mx-0 menu-links nice-scroll">
-                        <div class="col-lg-1 col-xl-2"></div>
-                        <div class="col-md-11 col-lg-10 col-xl-8 mb-4 mb-md-0">
+                        <div class="d-none d-md-block col-lg-1 col-xl-2"></div>
+                        <div class="d-none d-md-block col-md-11 col-lg-10 col-xl-8 mb-4 mb-md-0">
                             <div class="row">
                                 <div class="col-md-6 mb-4 mb-md-5">
                                     <h4>Resumes</h4>
@@ -98,17 +98,39 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- navigation links on small screens -->
+                        <div class="col-12 d-lg-none">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/resumes.html">Resumes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/blog.html">
+                                        Blogs
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Contacts
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-toggle="modal" href="#login" class="nav-link">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- social accounts -->
                         <div class="col-md-1 col-lg-1 col-xl-2 position-relative">
                             <ul class="social-media d-flex flex-md-column align-items-center">
                                 <li>
                                     <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                             <line x1="5" y1="9" x2="19" y2="9" />
                                             <line x1="5" y1="15" x2="19" y2="15" />
                                             <line x1="11" y1="4" x2="7" y2="20" />
                                             <line x1="17" y1="4" x2="13" y2="20" />
-                                          </svg>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="mx-4">
@@ -208,7 +230,7 @@
                             <a class="nav-link" href="#">Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/login.html">Login</a>
+                            <a data-toggle="modal" href="#login" class="nav-link">Login</a>
                         </li>
                     </ul>
                     <form action="POST">
