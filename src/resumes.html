@@ -17,12 +17,146 @@
         <meta property="og:image" content="LINK TO THE IMAGE FILE" />
         <meta property="og:url" content="PERMALINK" />
         <meta property="og:site_name" content="SITE NAME" />
+
+        <!-- page loader -->
+        <style>
+            .page-loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                overflow: hidden;
+                z-index: 99999999999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: 500ms;
+            }
+
+            .page-loader.show {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .page-loader::before,
+            .page-loader::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 0;
+                height: 100%;
+                z-index: 1;
+                background: #fff;
+                transition: 500ms;
+            }
+
+            .page-loader::before {
+                left: 0;
+            }
+
+            .page-loader::after {
+                right: 0;
+            }
+
+            .page-loader.show::before,
+            .page-loader.show::after {
+                width: 50%;
+            }
+
+            .page-loader__content {
+                position: relative;
+                z-index: 3;
+            }
+
+            .spinner {
+                position: relative;
+                height: 100px;
+                width: 100px;
+            }
+
+            .spinner-quarter {
+                position: absolute;
+                top: 0;
+                left: 0;
+                box-sizing: border-box;
+                height: inherit;
+                width: inherit;
+                border: 4px solid transparent;
+                -webkit-animation: blink 1.5s infinite ease-out;
+                        animation: blink 1.5s infinite ease-out;
+                border-radius: 50%;
+            }
+
+            @-webkit-keyframes blink {
+                0% {
+                    border-top-color: #222;
+                }
+                33% {
+                    border-top-color: rgba(34, 34, 34, 0.33);
+                }
+                100% {
+                    border-top-color: rgba(34, 34, 34, 0);
+                }
+            }
+
+            @keyframes blink {
+                0% {
+                    border-top-color: #bf1e2e;
+                }
+                33% {
+                    border-top-color: rgba(191, 30, 46, 0.33);
+                }
+                100% {
+                    border-top-color: rgba(191, 30, 46, 0);
+                }
+            }
+            .spinner-quarter--1 {
+                transform: rotate(0deg);
+                -webkit-animation-delay: 0s;
+                        animation-delay: 0s;
+            }
+
+            .spinner-quarter--2 {
+                transform: rotate(90deg);
+                -webkit-animation-delay: 0.375s;
+                        animation-delay: 0.375s;
+            }
+
+            .spinner-quarter--3 {
+                transform: rotate(180deg);
+                -webkit-animation-delay: 0.75s;
+                        animation-delay: 0.75s;
+            }
+
+            .spinner-quarter--4 {
+                transform: rotate(270deg);
+                -webkit-animation-delay: 1.125s;
+                        animation-delay: 1.125s;
+            }
+        </style>
         
         <link rel="stylesheet" href="css/vendor/vendor.bundle.css">
         <link rel="stylesheet" href="css/main.min.css">
     
+        <!-- RTL -->
+        <!-- <link rel="stylesheet" href="css/main.rtl.min.css"> -->
     </head>
-    <body>
+    <body class="overflow-hidden">
+
+      <!-- page loader -->
+      <div class="page-loader show">
+        <div class="page-loader__content">
+            <div class="spinner">
+                <div class="spinner-quarter spinner-quarter--1"></div>
+                <div class="spinner-quarter spinner-quarter--2"></div>
+                <div class="spinner-quarter spinner-quarter--3"></div>
+                <div class="spinner-quarter spinner-quarter--4"></div>
+            </div>
+        </div>
+      </div>
 
     <!-- header -->
     <header class="header header__inner">
@@ -32,7 +166,7 @@
               <div class="d-flex justify-content-between">
                 <a class="navbar-brand inner" href="/">
                   <span>LOGO</span>
-              </a>
+                </a>
                 <button id="btnMenu" class="btn btn-menu p-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -41,9 +175,22 @@
                     <line x1="4" y1="18" x2="20" y2="18" />
                     </svg>
                 </button>
-                <div></div>
+                <a href="/" class="language-toggler d-flex align-items-center">
+                  <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <circle cx="12" cy="12" r="9" />
+                      <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                      <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                      <path d="M11.5 3a17 17 0 0 0 0 18" />
+                      <path d="M12.5 3a17 17 0 0 1 0 18" />
+                      </svg>
+                  </span>
+                  <span>ع</span>
+                </a>
               </div>
             </div>
+            <!-- navigation menu -->
             <div id="headerMenu" class="header__menu-content">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-dark px-3 px-sm-0">

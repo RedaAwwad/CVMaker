@@ -4,16 +4,27 @@
   position: relative;
   min-height: 100vh;
 
+  .language-toggler {
+    gap: 5px;
+    border: 1px solid;
+    padding: 0.3rem 0.75rem;
+    border-radius: 3px;
+    color: $secondary;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+  }
+
   &__inner {
     min-height: 1px;
     height: 85px;
     background-color: $white;
 
-    .navbar-brand.inner {
+    .navbar-brand.inner,
+    .language-toggler {
       position: relative;
       z-index: 5;
       transform: translateY(-40px);
-      // color: $white;
     }
 
   }

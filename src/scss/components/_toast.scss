@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: -100%;
+  z-index: 9999;
+  background-color: $secondary;
+  color: $white;
+  transition: 300ms $bezier;
+
+  &.show {
+    right: 20px;
+  }
+
+  &-header {
+    background-color: $white;
+    color: $secondary;
+  }
+
+  @media screen and (max-width: 567px) {
+    top: auto;
+    bottom: 20px;
+  }
+}

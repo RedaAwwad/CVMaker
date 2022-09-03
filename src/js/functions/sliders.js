@@ -1,8 +1,11 @@
+const isRTL = document.querySelector('html').getAttribute('dir') == 'rtl';
+
 // init Templates Slider
 export const initTemplatesSlider = (element) => {
   $(element).slick({
     slidesToShow: 2,
     slidesToScroll: 1,
+    rtl: isRTL,
     dots: false,
     arrows: false,
     infinite: true,
@@ -29,7 +32,7 @@ export const initTestimonialSlider = (element) => {
     dots: false,
     arrows: false,
     infinite: true,
-    // autoplay: true,
+    rtl: isRTL,
   });
 }
 
@@ -41,7 +44,7 @@ export const initTestimonialSliderNavigator = (element) => {
     dots: false,
     arrows: false,
     infinite: true,
-    // focusOnSelect: true,
+    rtl: isRTL,
     touchMove: false,
     draggable: false,
     // fade: true,
@@ -56,6 +59,7 @@ export const initPartnersSlider = (element) => {
     slidesToScroll: 1,
     dots: false,
     arrows: false,
+    rtl: isRTL,
     infinite: true,
     autoplay: true,
     cssEase: 'linear',
@@ -89,6 +93,7 @@ export const initMembershipsSlider = (element) => {
     slidesToScroll: 1,
     dots: false,
     arrows: false,
+    rtl: isRTL,
     infinite: true,
     autoplay: true,
     cssEase: 'linear',

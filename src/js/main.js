@@ -78,3 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+document.addEventListener('readystatechange', () => {
+  document.querySelector('body').classList.remove('overflow-hidden');
+  document.querySelector('.page-loader').classList.remove('show');
+});

@@ -132,6 +132,23 @@ const compileSass = () => {
     .pipe(browserSync.stream());
 }
 
+// sass rtl
+const compileSassRTL = () => {
+  return src('./src/scss/main.rtl.scss', { allowEmpty: true })
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(autoprefixer({ 
+      grid: 'autoplace' 
+    }))
+    .pipe(minifyCSS())
+    .pipe(sourcemaps.write())
+    .pipe(rename(path => {
+      path.basename += ".min";
+    }))
+    .pipe(dest(`${PATHS['dist']}/css`))
+    .pipe(browserSync.stream());
+}
+
 // minify imgs
 const minifyImgs = () => {
   return src(PATHS['imgs'], { allowEmpty: true })
@@ -178,6 +195,7 @@ const watchTasks = () => {
   watch(PATHS['vendor.js'], vendorJS);
   watch(PATHS['vendor.css'], vendorCSS);
   watch(PATHS['sass'], compileSass);
+  watch('./src/scss/main.rtl.scss', compileSassRTL);
   watch('./src/js/**/*.js', compileJS);
   watch(PATHS['imgs'], minifyImgs);
 }
@@ -191,6 +209,7 @@ exports.default = series(
   vendorJS,
   vendorCSS,
   compileJS,
+  compileSassRTL,
   compileSass,
   minifyImgs,
   webpImgs,
@@ -206,6 +225,7 @@ exports.build = series(
   vendorJS,
   vendorCSS,
   compileSass,
+  compileSassRTL,
   compileJS,
   minifyImgs,
   webpImgs

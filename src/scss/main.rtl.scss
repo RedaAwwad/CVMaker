@@ -1,0 +1,118 @@
+body {
+  direction: rtl;
+  text-align: right;
+  
+}
+
+.section__title--padding {
+  left: auto;
+  right: 0;
+
+  &.center {
+    @media screen and (max-width: 576px) {
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.our-main-services {
+
+  @media screen and (max-width: 991px) {
+    padding-top: 2rem;
+  }
+
+  .btn-primary svg {
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+
+  @media screen and (max-width: 991px) {
+    .slides-container {
+      order: 2 !important;
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__slides {
+    .services-slide {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, 40px);
+    }
+
+    .services-slide.active {
+      transform: translate(-290px, 0);
+    }
+
+    .services-slide.last {
+      transform: translate(0, 80px);
+    }
+  }
+
+  &__content {
+    padding-right: 3rem;
+
+    @media screen and (max-width: 991px) {
+      // padding: 0;
+      // padding-top: 10rem;
+      order: 1 !important;
+    }
+  }
+
+}
+
+.card.blog-card {
+  text-align: right;
+}
+
+.resume-btn {
+  left: auto;
+  right: 10%;
+
+  .btn {
+    left: auto;
+    right: 0;
+  }
+  
+  &__content {
+    padding: 0.3rem 65px 0.3rem 1rem;
+  }
+}
+
+.memberships .btn-start {
+  svg {
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+}
+
+.memberships__card li::after {
+  right: auto;
+  left: 0;
+}
+
+.testimonial-slider__control .btn-control {
+  svg {
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+
+  &:first-child {
+    border-radius: 0 0 20px 20px;
+  }
+
+  &:last-child {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.stats__shape-card:nth-child(2) {
+  transform: translateX(-35px);
+}
+
+.pagination .page-link svg {
+  display: inline-block;
+  transform: rotate(180deg);
+}
