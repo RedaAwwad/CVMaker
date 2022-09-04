@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" href="assets/imgs/logo.png" type="image" sizes="16x16">
-        <title>CV Maker | Resumes page</title>
+        <title>CV Maker | Contacts</title>
         <!-- SEO Meta -->
         <meta name="description" content="This is meta description Sample.">
         <meta name="keywords" content="CV Maker">
@@ -20,142 +20,143 @@
 
         <!-- page loader -->
         <style>
-            .page-loader {
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 100vw;
-                overflow: hidden;
-                z-index: 99999999999;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0;
-                visibility: hidden;
-                transition: 500ms;
-            }
+          .page-loader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              height: 100vh;
+              width: 100vw;
+              overflow: hidden;
+              z-index: 99999999999;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              opacity: 0;
+              visibility: hidden;
+              transition: 500ms;
+          }
 
-            .page-loader.show {
-                opacity: 1;
-                visibility: visible;
-            }
+          .page-loader.show {
+              opacity: 1;
+              visibility: visible;
+          }
 
-            .page-loader::before,
-            .page-loader::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                width: 0;
-                height: 100%;
-                z-index: 1;
-                background: #fff;
-                transition: 500ms;
-            }
+          .page-loader::before,
+          .page-loader::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              width: 0;
+              height: 100%;
+              z-index: 1;
+              background: #fff;
+              transition: 500ms;
+          }
 
-            .page-loader::before {
-                left: 0;
-            }
+          .page-loader::before {
+              left: 0;
+          }
 
-            .page-loader::after {
-                right: 0;
-            }
+          .page-loader::after {
+              right: 0;
+          }
 
-            .page-loader.show::before,
-            .page-loader.show::after {
-                width: 50%;
-            }
+          .page-loader.show::before,
+          .page-loader.show::after {
+              width: 50%;
+          }
 
-            .page-loader__content {
-                position: relative;
-                z-index: 3;
-            }
+          .page-loader__content {
+              position: relative;
+              z-index: 3;
+          }
 
-            .spinner {
-                position: relative;
-                height: 100px;
-                width: 100px;
-            }
+          .spinner {
+              position: relative;
+              height: 100px;
+              width: 100px;
+          }
 
-            .spinner-quarter {
-                position: absolute;
-                top: 0;
-                left: 0;
-                box-sizing: border-box;
-                height: inherit;
-                width: inherit;
-                border: 4px solid transparent;
-                -webkit-animation: blink 1.5s infinite ease-out;
-                        animation: blink 1.5s infinite ease-out;
-                border-radius: 50%;
-            }
+          .spinner-quarter {
+              position: absolute;
+              top: 0;
+              left: 0;
+              box-sizing: border-box;
+              height: inherit;
+              width: inherit;
+              border: 4px solid transparent;
+              -webkit-animation: blink 1.5s infinite ease-out;
+                      animation: blink 1.5s infinite ease-out;
+              border-radius: 50%;
+          }
 
-            @-webkit-keyframes blink {
-                0% {
-                    border-top-color: #222;
-                }
-                33% {
-                    border-top-color: rgba(34, 34, 34, 0.33);
-                }
-                100% {
-                    border-top-color: rgba(34, 34, 34, 0);
-                }
-            }
+          @-webkit-keyframes blink {
+              0% {
+                  border-top-color: #222;
+              }
+              33% {
+                  border-top-color: rgba(34, 34, 34, 0.33);
+              }
+              100% {
+                  border-top-color: rgba(34, 34, 34, 0);
+              }
+          }
 
-            @keyframes blink {
-                0% {
-                    border-top-color: #bf1e2e;
-                }
-                33% {
-                    border-top-color: rgba(191, 30, 46, 0.33);
-                }
-                100% {
-                    border-top-color: rgba(191, 30, 46, 0);
-                }
-            }
-            .spinner-quarter--1 {
-                transform: rotate(0deg);
-                -webkit-animation-delay: 0s;
-                        animation-delay: 0s;
-            }
+          @keyframes blink {
+              0% {
+                  border-top-color: #bf1e2e;
+              }
+              33% {
+                  border-top-color: rgba(191, 30, 46, 0.33);
+              }
+              100% {
+                  border-top-color: rgba(191, 30, 46, 0);
+              }
+          }
+          .spinner-quarter--1 {
+              transform: rotate(0deg);
+              -webkit-animation-delay: 0s;
+                      animation-delay: 0s;
+          }
 
-            .spinner-quarter--2 {
-                transform: rotate(90deg);
-                -webkit-animation-delay: 0.375s;
-                        animation-delay: 0.375s;
-            }
+          .spinner-quarter--2 {
+              transform: rotate(90deg);
+              -webkit-animation-delay: 0.375s;
+                      animation-delay: 0.375s;
+          }
 
-            .spinner-quarter--3 {
-                transform: rotate(180deg);
-                -webkit-animation-delay: 0.75s;
-                        animation-delay: 0.75s;
-            }
+          .spinner-quarter--3 {
+              transform: rotate(180deg);
+              -webkit-animation-delay: 0.75s;
+                      animation-delay: 0.75s;
+          }
 
-            .spinner-quarter--4 {
-                transform: rotate(270deg);
-                -webkit-animation-delay: 1.125s;
-                        animation-delay: 1.125s;
-            }
-        </style>
+          .spinner-quarter--4 {
+              transform: rotate(270deg);
+              -webkit-animation-delay: 1.125s;
+                      animation-delay: 1.125s;
+          }
+      </style>
         
         <link rel="stylesheet" href="css/vendor/vendor.bundle.css">
         <link rel="stylesheet" href="css/main.min.css">
-    
+
         <!-- RTL -->
         <!-- <link rel="stylesheet" href="css/main.rtl.min.css"> -->
+    
     </head>
     <body class="overflow-hidden">
 
-      <!-- page loader -->
-      <div class="page-loader show">
-        <div class="page-loader__content">
-            <div class="spinner">
-                <div class="spinner-quarter spinner-quarter--1"></div>
-                <div class="spinner-quarter spinner-quarter--2"></div>
-                <div class="spinner-quarter spinner-quarter--3"></div>
-                <div class="spinner-quarter spinner-quarter--4"></div>
-            </div>
-        </div>
+       <!-- page loader -->
+        <div class="page-loader show">
+          <div class="page-loader__content">
+              <div class="spinner">
+                  <div class="spinner-quarter spinner-quarter--1"></div>
+                  <div class="spinner-quarter spinner-quarter--2"></div>
+                  <div class="spinner-quarter spinner-quarter--3"></div>
+                  <div class="spinner-quarter spinner-quarter--4"></div>
+              </div>
+          </div>
       </div>
 
     <!-- header -->
@@ -190,7 +191,6 @@
                 </a>
               </div>
             </div>
-            <!-- navigation menu -->
             <div id="headerMenu" class="header__menu-content">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-dark px-3 px-sm-0">
@@ -310,185 +310,48 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Resumes</li>
+            <li class="breadcrumb-item active" aria-current="page">Contacts</li>
           </ol>
         </nav>
-        <h1 class="text-center">Choose a template for your ResumeCv</h1>
+        <h1 class="text-center">Contact with us</h1>
       </div>
     </section>
 
     <main>
         <div class="overflow-hidden">
-          <section class="resumes__content">
-            <div class="container">
-              <!-- IMPORTANT NOTE: for ANIMATION -->
-              <!-- The first 4 columns should contain 'slide-up' class -->
-              <!-- and the rest columns should contain 'reveal' class instead -->
-              <div class="row mb-4">
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <div class="card-ribbon dark">
-                      <span class="text-lg">free</span>
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto">
+                <form action="">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Fullname</label>
+                        <input type="text" class="form-control" required>
+                      </div>
                     </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" required>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <div class="card-ribbon">
-                      <span class="text-lg">premium</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
+                  <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" class="form-control" required>
                   </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <div class="card-ribbon dark">
-                      <span class="text-lg">free</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
+                  <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea class="form-control" cols="30" rows="5" required></textarea>
                   </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 slide-up">
-                  <div class="card resume-card">
-                    <div class="card-ribbon">
-                      <span class="text-lg">premium</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Send Your Message</button>
                   </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <div class="card-ribbon dark">
-                      <span class="text-lg">free</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <div class="card-ribbon">
-                      <span class="text-lg">premium</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <div class="card-ribbon">
-                      <span class="text-lg">premium</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3 mb-4 reveal">
-                  <div class="card resume-card">
-                    <div class="card-ribbon dark">
-                      <span class="text-lg">free</span>
-                    </div>
-                    <a href="assets/imgs/cv.jpg" title="Zoom in Template" data-lightbox="image-1" class="btn p-0">
-                      <img src="assets/imgs/cv.jpg" class="card-img" alt="">
-                    </a>
-                    <div class="card-body">
-                      <a href="/builder.html" class="btn p-0 mb-3">
-                        <h2 class="card-title">Resume Name</h2>
-                      </a>
-                      <a href="/builder.html" class="btn btn-sm btn-block btn-primary">
-                        Builder
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center">
-                <nav aria-label="Page navigation" class="reveal">
-                  <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="15 6 9 12 15 18" />
-                        </svg>
-                      </a></li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 6 15 12 9 18" />
-                        </svg>
-                      </a></li>
-                  </ul>
-                </nav>
+                </form>
               </div>
             </div>
-          </section>
+          </div>
         </div>
     </main>
     
